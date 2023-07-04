@@ -5,7 +5,10 @@ const About = () => {
     <section id="about">
       <h2>About Me</h2>
       <div class="about-container">
-        <img src="images/pic.JPG" alt="profile picture" />
+        <img
+          src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/pic.JPG"
+          alt="profile picture"
+        />
         <div class="about-text">
           <p>
             Hello, I'm Isha, a UI/UX designer with a MSc.IT from University of

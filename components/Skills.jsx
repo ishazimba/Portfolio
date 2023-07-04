@@ -44,44 +44,88 @@ const Skills = () => {
         </div>
         <Slider {...settings} ref={sliderRef} className="slider-with-border">
           <div className="skills-icon">
-            <img src="images/react.png" alt="react" className="icon" />
-          </div>
-          <div className="skills-icon">
-            <img src="/images/js.png" alt="js" className="icon" />
-          </div>
-          <div className="skills-icon">
-            <img src="/images/node.png" alt="node" className="icon" />
-          </div>
-          <div className="skills-icon">
-            <img src="/images/vite.svg" alt="vite" className="icon" />
-          </div>
-          <div className="skills-icon">
-            <img src="/images/html.png" alt="html" className="icon" />
-          </div>
-          <div className="skills-icon">
-            <img src="/images/css.png" alt="css" className="icon" />
-          </div>
-          <div className="skills-icon">
-            <img src="/images/git.png" alt="git" className="icon" />
-          </div>
-          <div className="skills-icon">
-            <img src="/images/Expressjs.png" alt="express" className="icon" />
-          </div>
-          <div className="skills-icon">
-            <img src="/images/npm.png" alt="npm" className="icon" />
-          </div>
-          <div className="skills-icon">
-            <img src="/images/figma.svg" alt="figma" className="icon" />
+            <img
+              src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/react.png"
+              alt="react"
+              className="icon"
+            />
           </div>
           <div className="skills-icon">
             <img
-              src="/images/elephantsql.png"
+              src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/js.png"
+              alt="js"
+              className="icon"
+            />
+          </div>
+          <div className="skills-icon">
+            <img
+              src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/node.png"
+              alt="node"
+              className="icon"
+            />
+          </div>
+          <div className="skills-icon">
+            <img
+              src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/vite.svg"
+              alt="vite"
+              className="icon"
+            />
+          </div>
+          <div className="skills-icon">
+            <img
+              src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/html.png"
+              alt="html"
+              className="icon"
+            />
+          </div>
+          <div className="skills-icon">
+            <img
+              src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/css.png"
+              alt="css"
+              className="icon"
+            />
+          </div>
+          <div className="skills-icon">
+            <img
+              src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/git.png"
+              alt="git"
+              className="icon"
+            />
+          </div>
+          <div className="skills-icon">
+            <img
+              src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/Expressjs.png"
+              alt="express"
+              className="icon"
+            />
+          </div>
+          <div className="skills-icon">
+            <img
+              src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/npm.png"
+              alt="npm"
+              className="icon"
+            />
+          </div>
+          <div className="skills-icon">
+            <img
+              src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/figma.svg"
+              alt="figma"
+              className="icon"
+            />
+          </div>
+          <div className="skills-icon">
+            <img
+              src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/elephantsql.png"
               alt="elephantsql"
               className="icon"
             />
           </div>
           <div className="skills-icon">
-            <img src="/images/bootstrap.png" alt="bootstrap" className="icon" />
+            <img
+              src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/bootstrap.png"
+              alt="bootstrap"
+              className="icon"
+            />
           </div>
         </Slider>
         <div

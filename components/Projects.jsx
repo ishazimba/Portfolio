@@ -13,7 +13,11 @@ const Projects = () => {
             <div class="project-info">
               <h3>NC NEWS</h3>
               <div class="desktop-images">
-                <img src="images/fe1.png" alt="image" class="fe-image" />
+                <img
+                  src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/fe1.png"
+                  alt="image"
+                  class="fe-image"
+                />
               </div>
             </div>
           </a>
@@ -23,7 +27,11 @@ const Projects = () => {
             <div class="project-info">
               <h3>AirPark</h3>
               <div class="mobile-images">
-                <img src="images/airpark.png" alt="image" class="fe-image" />
+                <img
+                  src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/airpark.png"
+                  alt="image"
+                  class="fe-image"
+                />
               </div>
             </div>
           </a>
@@ -33,7 +41,11 @@ const Projects = () => {
             <div class="project-info">
               <h3>UWE MAPS</h3>
               <div class="desktop-images">
-                <img src="images/fe1.png" alt="image" class="fe-image" />
+                <img
+                  src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/fe1.png"
+                  alt="image"
+                  class="fe-image"
+                />
               </div>
             </div>
           </a>
@@ -47,7 +59,7 @@ const Projects = () => {
               <h3>Student Mental Wellbeing Application (SMWA)</h3>
               <div class="mobile-images">
                 <img
-                  src="images/smwa-homepage.png"
+                  src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/smwa-homepage.png"
                   alt="Student mental wellbeing application"
                 />
               </div>
@@ -59,7 +71,10 @@ const Projects = () => {
             <div class="project-info">
               <h3>Freeley Palmer</h3>
               <div class="desktop-images">
-                <img src="images/FP-LOGIN.png" alt="FP CAPITAL" />
+                <img
+                  src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/FP-LOGIN.png"
+                  alt="FP CAPITAL"
+                />
               </div>
             </div>
           </a>
@@ -69,7 +84,10 @@ const Projects = () => {
             <div class="project-info">
               <h3>The Linear Academy</h3>
               <div class="desktop-images">
-                <img src="images/TLA.png" alt="TLA" />
+                <img
+                  src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/TLA.png"
+                  alt="TLA"
+                />
               </div>
             </div>
           </a>
