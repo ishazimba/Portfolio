@@ -9,7 +9,7 @@ import Smwa from "../pages/Smwa";
 import Fp from "../pages/Fp";
 import Tla from "../pages/Tla";
 import NCNews from "../pages/NC-News";
-import NCNewsFrontend from "../pages/NC-News-frontend";
+
 import Skills from "../components/Skills";
 import { ThemeContext, ThemeProvider } from "./ThemeContext";
 import "./App.css";
