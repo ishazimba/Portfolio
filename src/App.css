@@ -1,0 +1,314 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "daisyui/dist/full.css";
+
+@font-face {
+  font-family: "burtons";
+  src: url();
+}
+.dark {
+  /* Add your dark mode styles here */
+  /* For example: */
+  background-color: #222222;
+  color: #ffffff;
+}
+body.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 5rem;
+}
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+}
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+/*------body------*/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff; /* Replace #333 with your desired color value */
+  color: #333;
+  position: fixed;
+
+  z-index: 999; /* Ensure the navbar appears above other elements */
+  width: 100%;
+}
+
+.navbar_links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 8rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+
+.navbar_link {
+  margin-left: 50px;
+  color: #037bfe;
+  /* Add any additional styling for the links */
+}
+.navbar_link:hover {
+  color: #87ceeb; /* Replace #ff0000 with your desired hover text color value */
+  cursor: pointer;
+}
+.navbar_logo {
+  font-family: cursive;
+  font-size: 40px;
+  padding-left: 8rem;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+/*------------------nav bar--------------------*/
+
+.header_section {
+  background-color: #037bfe;
+  padding: 12rem;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.banner_page {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem; /* Adjust the left and right padding as needed */
+}
+
+.hero-text {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.hero-text h1 {
+  color: #fff;
+}
+
+.hero-text h3 {
+  color: #fff;
+}
+
+.projects-button {
+  background-color: #dddff5;
+  margin-top: 35px;
+  color: #5c5c5c;
+  padding: 20px 40px;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.projects-button:hover {
+  background-color: #aee6fa;
+  color: #333;
+}
+
+/**
+.hero-icons {
+  display: flex;
+  align-items: center;
+}
+
+.hero-icon {
+  margin-right: 20px;
+  font-size: 4rem;
+  color: #fff;
+}}
+**/
+/*------------------header/hero image--------------------*/
+.skills-container h1 {
+  margin: 40px;
+}
+.skills-icon {
+  width: 200px;
+
+  padding: 10px;
+}
+.slider-with-border {
+  /* Add border radius */
+  overflow: hidden; /* Hide overflowing elements */
+  width: 90%;
+  margin: 0 auto;
+  height: 250px;
+  padding: 60px;
+}
+.skills-icon:last-child {
+  margin-right: 0; /* Remove the margin-right from the last skills-icon */
+}
+.slider-container {
+  display: flex;
+  align-items: center;
+}
+
+.slider-container .icon {
+  width: 180px;
+  height: 150px;
+  align-content: center;
+}
+
+.slider-container .arrow {
+  position: absolute;
+
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+.slider-container .left-arrow {
+  left: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-container .right-arrow {
+  right: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+/*--------------skills-----------------*/
+
+#about {
+  padding: 50px;
+  padding-top: 20px;
+  background-color: #007bff;
+  color: #fff;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+}
+
+.about-container img {
+  max-width: 500px;
+  margin-right: 70px;
+  border-radius: 50rem;
+}
+
+.about-text {
+  flex: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  padding: 20px;
+  text-align: justify;
+}
+#about h2 {
+  color: #fff;
+  padding-left: 200px;
+}
+
+/*---------------about me-----------------------*/
+#projects {
+  margin: 40px;
+}
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.project {
+  width: calc(33.33% - 20px);
+  box-sizing: border-box;
+  padding: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #333;
+  flex-direction: column;
+  height: 300px;
+
+  color: #fff;
+  border-radius: 5px;
+}
+
+.project img {
+  max-height: 200px;
+}
+
+.project:not(:last-child) {
+  margin-right: 10px;
+}
+
+.project h3 {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.project a {
+  text-decoration: none;
+}
+/*-------------------projects---------------------*/
+
+#contact_me {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 40px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+#contact_me a {
+  padding: 10px;
+  color: #fff;
+}
+
+#contact_me a:hover {
+  color: #87ceeb;
+  cursor: pointer;
+}
+
+/*---------------footer-----------------------*/
+
+/* Media query for screens smaller than 768px (mobile devices) */
+@media (max-width: 767px) {
+  .navbar_links {
+    display: none;
+  }
+
+  .navbar_logo {
+    font-size: 20px;
+  }
+
+  .header_section {
+    padding: 30px;
+  }
+
+  .banner_page {
+    padding: 20px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+  }
+
+  .hero-icon {
+    margin: 0 5px;
+    font-size: 2rem;
+  }
+}
