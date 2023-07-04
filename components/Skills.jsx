@@ -44,7 +44,11 @@ const Skills = () => {
         </div>
         <Slider {...settings} ref={sliderRef} className="slider-with-border">
           <div className="skills-icon">
-            <img src="/images/react.png" alt="react" className="icon" />
+            <img
+              src="https://github.com/ishazimba/Portfolio/blob/main/images/react.png"
+              alt="react"
+              className="icon"
+            />
           </div>
           <div className="skills-icon">
             <img src="/images/js.png" alt="js" className="icon" />
