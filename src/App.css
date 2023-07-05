@@ -106,9 +106,9 @@ h3 {
 
 .projects-button {
   background-color: #dddff5;
-  margin-top: 35px;
+  margin-top: 80px;
   color: #5c5c5c;
-  padding: 20px 40px;
+  padding: 20px 60px;
   font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
@@ -136,59 +136,66 @@ h3 {
 }}
 **/
 /*------------------header/hero image--------------------*/
-.skills-container h1 {
-  margin: 40px;
+#skills {
+  padding-bottom: 40px;
+  padding-top: 40px;
 }
-.skills-icon {
-  width: 200px;
-
-  padding: 10px;
-}
-.slider-with-border {
-  /* Add border radius */
-  overflow: hidden; /* Hide overflowing elements */
-  width: 90%;
-  margin: 0 auto;
-  height: 250px;
-  padding: 60px;
-}
-.skills-icon:last-child {
-  margin-right: 0; /* Remove the margin-right from the last skills-icon */
+#skills h1 {
+  padding-left: 40px;
 }
 .slider-container {
-  display: flex;
+  position: relative;
+  margin: 0 auto;
+  max-width: 90%;
   align-items: center;
+  justify-content: center;
+  padding: 90px;
+  height: 300px;
 }
 
-.slider-container .icon {
-  width: 180px;
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 150px;
-  align-content: center;
+  width: 10px;
+  flex-direction: column;
+
+  border: 0.1px solid #eaeaea;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
-.slider-container .arrow {
-  position: absolute;
+.slide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  padding: 40px;
+  display: block;
+  margin: auto; /* center the image horizontally */
+}
 
+.custom-arrow {
+  position: absolute;
+  top: 50%;
   transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: #efefef;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f1f1f1;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
   cursor: pointer;
-}
-.slider-container .left-arrow {
-  left: 0;
-  align-items: center;
-  justify-content: center;
+  z-index: 1;
 }
 
-.slider-container .right-arrow {
-  right: 0;
-  align-items: center;
-  justify-content: center;
+.custom-arrow-left {
+  left: -100px;
+}
+
+.custom-arrow-right {
+  right: -100px;
 }
 
 /*--------------skills-----------------*/

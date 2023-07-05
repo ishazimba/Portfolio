@@ -1,142 +1,134 @@
-import React, { useRef } from "react";
-import "uikit/dist/css/uikit.min.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React from "react";
 import Slider from "react-slick";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Skills = () => {
-  const sliderRef = useRef(null);
+  const CustomPrevArrow = ({ onClick }) => (
+    <div className="custom-arrow custom-arrow-left" onClick={onClick}>
+      <IoIosArrowBack size={40} />
+    </div>
+  );
 
-  const slideToLeft = () => {
-    sliderRef.current.slickPrev();
-  };
-
-  const slideToRight = () => {
-    sliderRef.current.slickNext();
-  };
+  const CustomNextArrow = ({ onClick }) => (
+    <div className="custom-arrow custom-arrow-right" onClick={onClick}>
+      <IoIosArrowForward size={40} />
+    </div>
+  );
 
   const settings = {
-    slidesToShow: 6,
-    slidesToScroll: 6,
-    swipeToSlide: true,
-    arrows: false,
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true, // Enable autoplay
+    autoplaySpeed: 3000, // Set autoplay speed in milliseconds
+    nextArrow: <CustomNextArrow />,
+    prevArrow: <CustomPrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
   };
-
   return (
-    <div className="skills-container">
+    <main id="skills">
       <h1>Skills</h1>
-      <div
-        className="slider-container"
-        style={{
-          margin: "0 auto",
-          display: "flex",
-          alignItems: "center",
-          marginBottom: "100px",
-        }}
-      >
-        <div
-          className="arrow left-arrow"
-          onClick={slideToLeft}
-          style={{ marginLeft: "40px" }}
-        >
-          <IoIosArrowBack size={32} />
-        </div>
-        <Slider {...settings} ref={sliderRef} className="slider-with-border">
-          <div className="skills-icon">
+      <div className="slider-container">
+        <Slider {...settings}>
+          <div className="slide">
             <img
               src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/react.png"
-              alt="react"
-              className="icon"
+              alt=""
             />
           </div>
-          <div className="skills-icon">
+          <div className="slide">
             <img
               src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/js.png"
-              alt="js"
-              className="icon"
+              alt=""
             />
           </div>
-          <div className="skills-icon">
+          <div className="slide">
             <img
               src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/node.png"
-              alt="node"
-              className="icon"
+              alt=""
             />
           </div>
-          <div className="skills-icon">
+          <div className="slide">
             <img
               src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/vite.svg"
-              alt="vite"
-              className="icon"
+              alt=""
             />
           </div>
-          <div className="skills-icon">
+          <div className="slide">
             <img
               src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/html.png"
-              alt="html"
-              className="icon"
+              alt=""
             />
           </div>
-          <div className="skills-icon">
+          <div className="slide">
             <img
               src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/css.png"
-              alt="css"
-              className="icon"
+              alt=""
             />
           </div>
-          <div className="skills-icon">
+          <div className="slide">
             <img
               src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/git.png"
-              alt="git"
-              className="icon"
+              alt=""
             />
           </div>
-          <div className="skills-icon">
+          <div className="slide">
             <img
               src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/Expressjs.png"
-              alt="express"
-              className="icon"
+              alt=""
             />
           </div>
-          <div className="skills-icon">
+          <div className="slide">
             <img
               src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/npm.png"
-              alt="npm"
-              className="icon"
+              alt=""
             />
           </div>
-          <div className="skills-icon">
+          <div className="slide">
             <img
               src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/figma.svg"
-              alt="figma"
-              className="icon"
+              alt=""
             />
           </div>
-          <div className="skills-icon">
+          <div className="slide">
             <img
               src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/elephantsql.png"
-              alt="elephantsql"
-              className="icon"
+              alt=""
             />
           </div>
-          <div className="skills-icon">
+          <div className="slide">
             <img
               src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/bootstrap.png"
-              alt="bootstrap"
-              className="icon"
+              alt=""
             />
           </div>
         </Slider>
-        <div
-          className="arrow right-arrow"
-          onClick={slideToRight}
-          style={{ marginRight: "40px" }}
-        >
-          <IoIosArrowForward size={32} />
-        </div>
       </div>
-    </div>
+    </main>
   );
 };
+
 export default Skills;
