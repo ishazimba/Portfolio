@@ -1,3 +1,3 @@
 # Portfolio
 
-[Live Link](https://ishatamang.netlify.app/)
+[Live Link](https://ishatamang.com.np)
