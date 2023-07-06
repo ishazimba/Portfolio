@@ -1,47 +1,26 @@
-import React, { useContext } from "react";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "../components/About";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import Header from "../components/Header";
 import Navbar from "../components/Navbar";
-import Smwa from "../pages/Smwa";
-import Fp from "../pages/Fp";
-import Tla from "../pages/Tla";
-import NCNews from "../pages/NC-News";
-
 import Skills from "../components/Skills";
+import Smwa from "../pages/Smwa";
 import { ThemeContext, ThemeProvider } from "./ThemeContext";
+import LandingPage from "../pages/LandingPage";
+
 import "./App.css";
 
 const App = () => {
-  const { isDarkMode } = useContext(ThemeContext);
-
   return (
-    <div className={`app ${isDarkMode ? "dark" : ""}`}>
+    <div className="app">
       <Router>
-        <ThemeProvider>
-          <Navbar />
-          <main className="mainContent">
-            <section id="home">
-              <Header />
-            </section>
-            <section id="skills">
-              <Skills />
-            </section>
-            <section id="about">
-              <About />
-            </section>
-
-            <section id="projects">
-              <Projects />
-            </section>
-
-            <section id="contact">
-              <Contact />
-            </section>
-          </main>
-        </ThemeProvider>
+        <Navbar /> {/* Include the Navbar component */}
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/smwa" element={<Smwa />} />
+        </Routes>
       </Router>
     </div>
   );

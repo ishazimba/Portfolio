@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -9,27 +9,20 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
-  const scrollToTop = () => {
-    scroll.scrollToTop();
+  const handleLinkClick = () => {
     setIsOpen(false);
   };
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 767);
-    };
-
-    window.addEventListener("resize", handleResize);
-    handleResize(); // Set initial value based on current screen size
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   return (
     <nav className="navbar">
-      <div className="navbar_logo" onClick={scrollToTop}>
-        Isha Tamang
+      <div className="navbar_logo">
+        <Link
+          to="/?section=home"
+          className="navbar_link"
+          onClick={handleLinkClick}
+        >
+          Isha Tamang
+        </Link>
       </div>
       {isMobile ? (
         <div className="navbar_links mobile" onClick={toggleMenu}>
@@ -41,52 +34,37 @@ const Navbar = () => {
           {isOpen && (
             <div className="menu">
               <Link
-                to="home"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
+                to="/?section=home"
                 className="navbar_link"
+                onClick={handleLinkClick}
               >
                 Home
               </Link>
               <Link
-                to="projects"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
+                to="/?section=projects"
                 className="navbar_link"
+                onClick={handleLinkClick}
               >
                 Projects
               </Link>
               <Link
-                to="skills"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
+                to="/?section=skills"
                 className="navbar_link"
+                onClick={handleLinkClick}
               >
                 Skills
               </Link>
               <Link
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
+                to="/?section=about"
                 className="navbar_link"
+                onClick={handleLinkClick}
               >
                 About
               </Link>
               <Link
-                to="contact"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
+                to="/?section=contact"
                 className="navbar_link"
+                onClick={handleLinkClick}
               >
                 Contact
               </Link>
@@ -96,52 +74,37 @@ const Navbar = () => {
       ) : (
         <div className="navbar_links">
           <Link
-            to="home"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
+            to="/?section=home"
             className="navbar_link"
+            onClick={handleLinkClick}
           >
             Home
           </Link>
           <Link
-            to="projects"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
+            to="/?section=projects"
             className="navbar_link"
+            onClick={handleLinkClick}
           >
             Projects
           </Link>
           <Link
-            to="skills"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
+            to="/?section=skills"
             className="navbar_link"
+            onClick={handleLinkClick}
           >
             Skills
           </Link>
           <Link
-            to="about"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
+            to="/?section=about"
             className="navbar_link"
+            onClick={handleLinkClick}
           >
             About
           </Link>
           <Link
-            to="contact"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
+            to="/?section=contact"
             className="navbar_link"
+            onClick={handleLinkClick}
           >
             Contact
           </Link>
