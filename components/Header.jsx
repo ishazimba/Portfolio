@@ -18,7 +18,7 @@ const Header = () => {
       <div className="banner_page">
         <div className="hero-text">
           <h1>Hello, I am Isha Tamang </h1>
-          <h3>A Software Engineer and UX Designer</h3>
+          <h3>A Software Engineer/UX Designer</h3>
 
           <Link
             to="projects"
