@@ -59,7 +59,7 @@ const Projects = () => {
               <h3>Student Mental Wellbeing Application (SMWA)</h3>
               <div class="mobile-images">
                 <img
-                  src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/smwa-homepage.png"
+                  src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/SMWA/splash.png"
                   alt="Student mental wellbeing application"
                 />
               </div>
