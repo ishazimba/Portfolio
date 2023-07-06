@@ -24,7 +24,7 @@ const Skills = () => {
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true, // Enable autoplay
-    autoplaySpeed: 3000, // Set autoplay speed in milliseconds
+    autoplaySpeed: 1500, // Set autoplay speed in milliseconds
     nextArrow: <CustomNextArrow />,
     prevArrow: <CustomPrevArrow />,
     responsive: [
@@ -50,7 +50,7 @@ const Skills = () => {
   };
   return (
     <main id="skills">
-      <h1>Skills</h1>
+      <h2>Skills</h2>
       <div className="slider-container">
         <Slider {...settings}>
           <div className="slide">

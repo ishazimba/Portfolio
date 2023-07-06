@@ -26,7 +26,7 @@ const Header = () => {
             smooth={true}
             offset={-70}
             duration={500}
-            className="navbar_link"
+            className="navbar_link_projects"
           >
             <button className="projects-button">Projects</button>
           </Link>
