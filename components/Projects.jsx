@@ -54,7 +54,7 @@ const Projects = () => {
 
       <div className="projects-container">
         <div className="project-container">
-          <Link to="/fp" className="project-link">
+          <Link to="/airpark" className="project-link">
             <div className="project-image-container">
               <img
                 src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/airpark/airpark.png"
@@ -64,8 +64,8 @@ const Projects = () => {
             <div className="project-info">
               <h3>AirPark</h3>
               <p>
-                A native mobile app that offers a seamless and convenient
-                parking experience for the travelers.
+                A cross platform mobile app that offers a seamless and
+                convenient parking experience for the travelers.
               </p>
             </div>
             <img
@@ -76,7 +76,7 @@ const Projects = () => {
           </Link>
         </div>
         <div className="project-container">
-          <Link to="/fp" className="project-link">
+          <Link to="/UWEMaps" className="project-link">
             <div className="project-image-container">
               <img
                 src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/uwemaps/uwemaps.png"

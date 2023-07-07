@@ -14,6 +14,8 @@ import LandingPage from "../pages/LandingPage";
 import "./App.css";
 import NcApi from "../pages/NC-Api";
 import NCNews from "../pages/NC-News";
+import AirPark from "../pages/airpark";
+import UWEMaps from "../pages/UweMaps";
 
 const App = () => {
   return (
@@ -25,6 +27,9 @@ const App = () => {
           <Route path="/smwa" element={<Smwa />} />
           <Route path="/ncapi" element={<NcApi />} />
           <Route path="/ncnews" element={<NCNews />} />
+          <Route path="/airpark" element={<AirPark />} />
+          <Route path="/uwemaps" element={<UWEMaps />} />
+          UWEMaps
         </Routes>
       </Router>
     </div>
