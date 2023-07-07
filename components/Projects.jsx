@@ -8,28 +8,36 @@ const Projects = () => {
       <div className="projects-container">
         <div className="project-container">
           <Link to="/fp" className="project-link">
-            <img
-              src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/nc%20news/nc-api.png"
-              alt="FP CAPITAL"
-            />
-            <h3>NC News API</h3>
-            <p>
-              A RESTful API designed to interact with a news database containing
-              articles, topics, users, and comments.
-            </p>
+            <div className="project-image-container">
+              <img
+                src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/nc%20news/nc-api.png"
+                alt="NC API"
+              />
+            </div>
+            <div className="project-info">
+              <h3>NC News API</h3>
+              <p>
+                A RESTful API designed to interact with a news database
+                containing articles, topics, users, and comments.
+              </p>
+            </div>
           </Link>
         </div>
         <div className="project-container">
-          <Link to="/fp" target="_blank">
-            <img
-              src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/nc%20news/nc-front-end.png"
-              alt="Student mental wellbeing application"
-            />
-            <h3>NC News</h3>
-            <p>
-              A React application that provides users with a platform to view
-              and interact with articles sourced from the NC News RESTful API.
-            </p>
+          <Link to="/fp" className="project-link">
+            <div className="project-image-container">
+              <img
+                src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/nc%20news/nc-front-end.png"
+                alt="NC Frontend"
+              />
+            </div>
+            <div className="project-info">
+              <h3>NC News</h3>
+              <p>
+                A React application that provides users with a platform to view
+                and interact with articles sourced from the NC News RESTful API.
+              </p>
+            </div>
           </Link>
         </div>
       </div>
