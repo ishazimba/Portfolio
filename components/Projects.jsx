@@ -102,7 +102,7 @@ const Projects = () => {
 
       <div className="projects-container">
         <div className="project-container">
-          <Link to="/fp" className="project-link">
+          <Link to="/smwa" className="project-link">
             <div className="project-image-container">
               <img
                 src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/SMWA/SMWA.png"

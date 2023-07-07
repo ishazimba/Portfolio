@@ -78,13 +78,12 @@ const UweMapsContent = () => {
               development process and allowing testing on Android devices.
             </p>
             <p>
-              <b> Programming Language:</b>
-              Dart, a modern object-oriented language, was used to develop the
-              user interface and compile it to native code for both iOS and
-              Android platforms.
+              <b> Programming Language:</b> Dart, a modern object-oriented
+              language, was used to develop the user interface and compile it to
+              native code for both iOS and Android platforms.
             </p>
             <p>
-              <b>Application Programming Interface (API):</b> Google Maps APIs,
+              <b>Application Programming Interface (API): </b> Google Maps APIs,
               including Geolocation, Geocoding, Places, Distance Matrix, and
               Direction, were integrated to provide map functionality and data
               exchange.

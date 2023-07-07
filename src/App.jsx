@@ -16,6 +16,7 @@ import NcApi from "../pages/NC-Api";
 import NCNews from "../pages/NC-News";
 import AirPark from "../pages/airpark";
 import UWEMaps from "../pages/UweMaps";
+import Fp from "../pages/Fp";
 
 const App = () => {
   return (
@@ -29,7 +30,7 @@ const App = () => {
           <Route path="/ncnews" element={<NCNews />} />
           <Route path="/airpark" element={<AirPark />} />
           <Route path="/uwemaps" element={<UWEMaps />} />
-          UWEMaps
+          <Route path="/fp" element={<Fp />} />
         </Routes>
       </Router>
     </div>
