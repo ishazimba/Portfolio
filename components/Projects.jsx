@@ -52,13 +52,14 @@ const Projects = () => {
         <div className="project-container">
           <Link to="/smwa" className="project-link">
             <img
-              src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/SMWA/SMWA.png"
-              alt="Student mental wellbeing application"
+              src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/uwemaps/uwemaps.png"
+              alt="UWE Maps"
             />
-            <h3>Student Mental Wellbeing Application</h3>
+            <h3>An interactive campus map to improve the user experience</h3>
             <p>
-              Designing the user experience of a student mental wellbeing
-              application.
+              A cross platform mobile application to improve the current UWE
+              campus map and help students, staff, and visitors find a specific
+              location on campus.
             </p>
           </Link>
         </div>
