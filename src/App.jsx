@@ -7,10 +7,13 @@ import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import Skills from "../components/Skills";
 import Smwa from "../pages/Smwa";
+
 import { ThemeContext, ThemeProvider } from "./ThemeContext";
 import LandingPage from "../pages/LandingPage";
 
 import "./App.css";
+import NcApi from "../pages/NC-Api";
+import NCNews from "../pages/NC-News";
 
 const App = () => {
   return (
@@ -20,6 +23,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/smwa" element={<Smwa />} />
+          <Route path="/ncapi" element={<NcApi />} />
+          <Route path="/ncnews" element={<NCNews />} />
         </Routes>
       </Router>
     </div>

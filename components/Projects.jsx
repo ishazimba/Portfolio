@@ -7,7 +7,7 @@ const Projects = () => {
       <h1>Portfolio</h1>
       <div className="projects-container">
         <div className="project-container">
-          <Link to="/fp" className="project-link">
+          <Link to="/ncapi" className="project-link">
             <div className="project-image-container">
               <img
                 src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/nc%20news/nc-api.png"
@@ -21,14 +21,19 @@ const Projects = () => {
                 containing articles, topics, users, and comments.
               </p>
             </div>
+            <img
+              className="image-button"
+              src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/viewProject.png"
+              alt="view project"
+            />
           </Link>
         </div>
         <div className="project-container">
-          <Link to="/fp" className="project-link">
+          <Link to="/ncnews" className="project-link">
             <div className="project-image-container">
               <img
                 src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/nc%20news/nc-front-end.png"
-                alt="NC Frontend"
+                alt="NC API"
               />
             </div>
             <div className="project-info">
@@ -38,60 +43,106 @@ const Projects = () => {
                 and interact with articles sourced from the NC News RESTful API.
               </p>
             </div>
+            <img
+              className="image-button"
+              src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/viewProject.png"
+              alt="view project"
+            />
           </Link>
         </div>
       </div>
 
       <div className="projects-container">
         <div className="project-container">
-          <Link to="/fp" target="_blank">
+          <Link to="/fp" className="project-link">
+            <div className="project-image-container">
+              <img
+                src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/airpark/airpark.png"
+                alt="AirPark"
+              />
+            </div>
+            <div className="project-info">
+              <h3>AirPark</h3>
+              <p>
+                A native mobile app that offers a seamless and convenient
+                parking experience for the travelers.
+              </p>
+            </div>
             <img
-              src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/airpark/airpark.png"
-              alt="airpark"
+              className="image-button"
+              src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/viewProject.png"
+              alt="view project"
             />
-            <h3>AirPark</h3>
-            <p>
-              A mobile app that offers a seamless and convenient parking
-              experience for the travelers.
-            </p>
           </Link>
         </div>
-
         <div className="project-container">
-          <Link to="/smwa" className="project-link">
+          <Link to="/fp" className="project-link">
+            <div className="project-image-container">
+              <img
+                src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/uwemaps/uwemaps.png"
+                alt="NC API"
+              />
+            </div>
+            <div className="project-info">
+              <h3>UWE Campus Map</h3>
+              <p>
+                A cross platform mobile application to improve the current UWE
+                campus map and help students, staff, and visitors find a
+                specific location on campus.
+              </p>
+            </div>
             <img
-              src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/uwemaps/uwemaps.png"
-              alt="UWE Maps"
+              className="image-button"
+              src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/viewProject.png"
+              alt="view project"
             />
-            <h3>An interactive campus map to improve the user experience</h3>
-            <p>
-              A cross platform mobile application to improve the current UWE
-              campus map and help students, staff, and visitors find a specific
-              location on campus.
-            </p>
           </Link>
         </div>
       </div>
 
       <div className="projects-container">
         <div className="project-container">
-          <Link to="/smwa" className="project-link">
+          <Link to="/fp" className="project-link">
+            <div className="project-image-container">
+              <img
+                src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/SMWA/SMWA.png"
+                alt="Student Mental Wellbeing Application"
+              />
+            </div>
+            <div className="project-info">
+              <h3>Student Mental Wellbeing Application</h3>
+              <p>
+                Designing the user experience of a mobile application which was
+                intended to be used by students seeking mental well-being tips,
+                suggestions, and solutions to cope with their situation.
+              </p>
+            </div>
             <img
-              src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/SMWA/SMWA.png"
-              alt="Student mental wellbeing application"
+              className="image-button"
+              src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/viewProject.png"
+              alt="view project"
             />
-            <h3>Student Mental Wellbeing Application</h3>
-            <p>
-              Designing the user experience of a student mental wellbeing
-              application.
-            </p>
           </Link>
         </div>
         <div className="project-container">
-          <Link to="/fp" target="_blank">
+          <Link to="/fp" className="project-link">
+            <div className="project-image-container">
+              <img
+                src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/fp/fp%20-front.png"
+                alt="FP CAPITAL"
+              />
+            </div>
+            <div className="project-info">
+              <h3>Freeley Palmer</h3>
+              <p>
+                Designing the wireframes and the prototype of the web
+                application using Figma.
+              </p>
+            </div>
             <img
-              src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/fp/fp%20-front.png"
-              alt="FP CAPITAL"
+              className="image-button"
+              src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/viewProject.png"
+              alt="view project"
             />
           </Link>
         </div>

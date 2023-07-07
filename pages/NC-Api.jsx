@@ -5,10 +5,10 @@ import Contact from "../components/Contact";
 
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import NcNewsHeader from "../components/NcNewsHeader";
-import NcNewsContent from "../components/NcNewsContent";
+import NcApiHeader from "../components/NcApiHeader";
+import NcApiContent from "../components/NcApiContent";
 
-const NCNews = () => {
+const NcApi = () => {
   const { pathname } = useLocation();
   const handleLinkClick = (sectionId) => {
     const landingPageUrl = "/"; // Update this to the actual Landing page URL
@@ -21,8 +21,8 @@ const NCNews = () => {
   return (
     <div className="project-content-page">
       <Navbar handleLinkClick={handleLinkClick} />
-      <NcNewsHeader /> {/* Update the subtitle */}
-      <NcNewsContent />
+      <NcApiHeader /> {/* Update the subtitle */}
+      <NcApiContent />
       <footer>
         <Contact />
       </footer>
@@ -30,4 +30,4 @@ const NCNews = () => {
   );
 };
 
-export default NCNews;
+export default NcApi;
