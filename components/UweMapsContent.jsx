@@ -1,16 +1,6 @@
 import React from "react";
-import YouTube from "react-youtube";
 
 const UweMapsContent = () => {
-  const videoId = "YOUR_YOUTUBE_VIDEO_ID";
-  const opts = {
-    height: "360",
-    width: "640",
-    playerVars: {
-      // For more available options, refer to the YouTube Player Parameters documentation
-      autoplay: 0,
-    },
-  };
   return (
     <section className="content">
       <h2>Project Overview </h2>
@@ -131,11 +121,11 @@ const UweMapsContent = () => {
       <div class="project-container-new">
         <div class="project-content">
           <div class="project-text">
-            <YouTube
-              videoId="_wop7KcV2ZU"
-              opts={{ width: "800px", height: "600px" }}
-            />
-
+            <video
+              src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/uwemaps/uwevideo.mov"
+              controls
+              class="project-video"
+            ></video>
             <br />
 
             <a
