@@ -2,11 +2,16 @@
 import React from "react";
 
 const Contact = () => {
+  const email = "isha.zimba@gmail.com";
   return (
     <footer id="contact_me">
-      <h2>Contact Me</h2>
+      <h2>Contact</h2>
       <div>
-        <p>You can reach me at isha.zimba@gmail.com</p>
+        <p>
+          Email:
+          <a href={`mailto:${email}`}>{email}</a>
+        </p>
+
         <p>
           LinkedIn:
           <a href="https://www.linkedin.com/in/isha-tamang/" target="_blank">
@@ -21,8 +26,7 @@ const Contact = () => {
         </p>
       </div>
       <div>
-        <p>&copy; Isha Tamang 2023</p>
-        <p>All rights reserved</p>
+        <p>&copy; Isha Tamang 2023. All rights reserved</p>
       </div>
     </footer>
   );

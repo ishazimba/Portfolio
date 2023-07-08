@@ -2,14 +2,14 @@ import React from "react";
 
 const About = () => {
   return (
-    <section id="about">
+    <section class="about">
       <h2>About Me</h2>
-      <div class="about-container">
+      <div class="about-container uk-hidden@s">
         <img
           src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/pic.JPG"
           alt="profile picture"
         />
-        <div class="about-text">
+        <div class="about-text ">
           <p>
             Hello, I'm Isha, a UI/UX designer with a MSc.IT from University of
             the West of England (UWE), Bristol and a recent graduate of a
