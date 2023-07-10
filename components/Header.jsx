@@ -1,12 +1,5 @@
 import React from "react";
 
-import {
-  FaMobile,
-  FaDesktop,
-  FaTablet,
-  FaPalette,
-  FaPaintBrush,
-} from "react-icons/fa";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 const Header = () => {
@@ -31,16 +24,6 @@ const Header = () => {
             <button className="projects-button">Projects</button>
           </Link>
         </div>
-
-        {/**
-         * <div className="hero-icons">
-          <FaMobile className="hero-icon" />
-          <FaDesktop className="hero-icon" />
-          <FaTablet className="hero-icon" />
-          <FaPalette className="hero-icon" />
-          <FaPaintBrush className="hero-icon" />
-        </div>
-         */}
       </div>
     </header>
   );

@@ -11,19 +11,21 @@ const Contact = () => {
           Email:
           <a href={`mailto:${email}`}>{email}</a>
         </p>
+        <a href="https://www.linkedin.com/in/isha-tamang/" target="_blank">
+          <img
+            className="social-media"
+            src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/linkedin.png"
+            alt="linkedin"
+          />
+        </a>
 
-        <p>
-          LinkedIn:
-          <a href="https://www.linkedin.com/in/isha-tamang/" target="_blank">
-            isha-tamang
-          </a>
-        </p>
-        <p>
-          GitHub:
-          <a href="https://github.com/ishazimba" target="_blank">
-            ishazimba
-          </a>
-        </p>
+        <a href="https://github.com/ishazimba" target="_blank">
+          <img
+            className="social-media"
+            src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/github.png"
+            alt="github"
+          />
+        </a>
       </div>
       <div>
         <p>&copy; Isha Tamang 2023. All rights reserved</p>
