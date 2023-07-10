@@ -23,7 +23,7 @@ const LandingPage = () => {
 
   return (
     <>
-      <main className="mainContent">
+      <main className="mainContent px-0">
         <section id="home">
           <Header />
         </section>
