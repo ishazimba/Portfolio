@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -12,6 +12,19 @@ const Navbar = () => {
   const handleLinkClick = () => {
     setIsOpen(false);
   };
+
+  const checkWindowSize = () => {
+    setIsMobile(window.innerWidth <= 767);
+  };
+
+  // Add event listener to check window size on load and resize
+  useEffect(() => {
+    checkWindowSize();
+    window.addEventListener("resize", checkWindowSize);
+    return () => {
+      window.removeEventListener("resize", checkWindowSize);
+    };
+  }, []);
 
   return (
     <nav className="navbar">
@@ -41,13 +54,6 @@ const Navbar = () => {
                 Home
               </Link>
               <Link
-                to="/?section=projects"
-                className="navbar_link"
-                onClick={handleLinkClick}
-              >
-                Projects
-              </Link>
-              <Link
                 to="/?section=skills"
                 className="navbar_link"
                 onClick={handleLinkClick}
@@ -61,6 +67,14 @@ const Navbar = () => {
               >
                 About
               </Link>
+              <Link
+                to="/?section=projects"
+                className="navbar_link"
+                onClick={handleLinkClick}
+              >
+                Projects
+              </Link>
+
               <Link
                 to="/?section=contact"
                 className="navbar_link"
@@ -80,13 +94,7 @@ const Navbar = () => {
           >
             Home
           </Link>
-          <Link
-            to="/?section=projects"
-            className="navbar_link"
-            onClick={handleLinkClick}
-          >
-            Projects
-          </Link>
+
           <Link
             to="/?section=skills"
             className="navbar_link"
@@ -100,6 +108,13 @@ const Navbar = () => {
             onClick={handleLinkClick}
           >
             About
+          </Link>
+          <Link
+            to="/?section=projects"
+            className="navbar_link"
+            onClick={handleLinkClick}
+          >
+            Projects
           </Link>
           <Link
             to="/?section=contact"

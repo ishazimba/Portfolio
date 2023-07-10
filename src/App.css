@@ -1,7 +1,6 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-@import "daisyui/dist/full.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @font-face {
   font-family: "burtons";
@@ -42,44 +41,111 @@ h3 {
   font-size: 2rem;
 }
 /*------body------*/
-
+/* Navbar styles */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #fff; /* Replace #333 with your desired color value */
-  color: #333;
+  background-color: #333;
+  color: #fff;
   position: fixed;
-
-  z-index: 999; /* Ensure the navbar appears above other elements */
+  z-index: 999;
   width: 100%;
+}
+
+.navbar_logo {
+  font-family: cursive;
+  font-size: 30px;
+  padding-left: 20px;
+  cursor: pointer;
+  font-weight: bolder;
+  color: #fff;
 }
 
 .navbar_links {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 8rem;
+  padding-right: 4rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .navbar_link {
-  margin-left: 50px;
-  color: #037bfe;
+  margin-left: 40px;
+  color: #fff;
   /* Add any additional styling for the links */
 }
+
 .navbar_link:hover {
-  color: #87ceeb; /* Replace #ff0000 with your desired hover text color value */
+  color: #87ceeb;
   cursor: pointer;
 }
-.navbar_logo {
-  font-family: cursive;
-  font-size: 40px;
-  padding-left: 8rem;
-  cursor: pointer;
-  font-weight: bolder;
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  .navbar_links {
+    display: none;
+  }
+
+  .navbar_logo {
+    font-size: 10px;
+    padding-left: 0rem;
+  }
+
+  .navbar_links.mobile {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-right: 2rem;
+  }
+
+  .hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .hamburger-icon .line {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    margin: 2px 0;
+    transition: all 0.3s ease;
+  }
+
+  .hamburger-icon.open .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-icon.open .line:first-child {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .hamburger-icon.open .line:last-child {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    padding: 20px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+  }
+
+  .menu .navbar_link {
+    margin: 10px 0;
+    color: #fff;
+    font-size: 13px;
+  }
 }
 
 /*------------------nav bar--------------------*/
@@ -96,6 +162,7 @@ h3 {
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem; /* Adjust the left and right padding as needed */
+  padding-top: 50px;
 }
 
 .hero-text {
@@ -129,18 +196,31 @@ h3 {
   color: #333;
 }
 
-/**
-.hero-icons {
-  display: flex;
-  align-items: center;
-}
+/* Media query for screens smaller than 640px (mobile devices) */
+@media (max-width: 639px) {
+  .header_section {
+    padding: 6rem 2rem;
+  }
 
-.hero-icon {
-  margin-right: 20px;
-  font-size: 4rem;
-  color: #fff;
-}}
-**/
+  .hero-text {
+    font-size: 1.5rem;
+    padding-top: 4rem;
+  }
+
+  .text-3xl {
+    font-size: 2rem;
+  }
+
+  .text-xl {
+    font-size: 1.5rem;
+  }
+
+  .projects-button {
+    padding: 10px 30px;
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+}
 /*------------------header/hero image--------------------*/
 #skills {
   padding-bottom: 40px;
