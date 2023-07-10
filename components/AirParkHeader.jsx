@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Link, animateScroll as scroll } from "react-scroll";
+import { animateScroll as scroll } from "react-scroll";
 
 const AirparHeader = () => {
   const scrollToTop = () => {

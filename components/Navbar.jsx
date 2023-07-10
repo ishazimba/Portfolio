@@ -17,7 +17,6 @@ const Navbar = () => {
     setIsMobile(window.innerWidth <= 767);
   };
 
-  // Add event listener to check window size on load and resize
   useEffect(() => {
     checkWindowSize();
     window.addEventListener("resize", checkWindowSize);

@@ -22,9 +22,9 @@ const Skills = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 6,
-    slidesToScroll: 5,
-    autoplay: true, // Enable autoplay
-    autoplaySpeed: 1500, // Set autoplay speed in milliseconds
+    slidesToScroll: 4,
+    autoplay: true,
+    autoplaySpeed: 1500,
     nextArrow: <CustomNextArrow />,
     prevArrow: <CustomPrevArrow />,
     responsive: [
@@ -32,18 +32,21 @@ const Skills = () => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 5,
+          slidesToScroll: 4,
         },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 4,
+          slidesToScroll: 4,
         },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 3,
+          slidesToScroll: 3,
         },
       },
     ],
@@ -97,7 +100,13 @@ const Skills = () => {
           </div>
           <div className="slide">
             <img
-              src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/Expressjs.png"
+              src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/express.png"
+              alt=""
+            />
+          </div>
+          <div className="slide">
+            <img
+              src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/jest.png"
               alt=""
             />
           </div>
@@ -116,6 +125,12 @@ const Skills = () => {
           <div className="slide">
             <img
               src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/elephantsql.png"
+              alt=""
+            />
+          </div>
+          <div className="slide">
+            <img
+              src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/tailwind.png"
               alt=""
             />
           </div>
