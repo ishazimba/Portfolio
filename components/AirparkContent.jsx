@@ -171,12 +171,6 @@ const AirParkContent = () => {
               alt="GIF Image"
             />
             <br />
-            <video
-              src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/airpark.mov"
-              controls
-              class="project-video"
-            ></video>
-            <br />
 
             <a
               class="link"
@@ -187,7 +181,6 @@ const AirParkContent = () => {
                 <b>Github Link</b>
               </p>
             </a>
-            <br />
 
             <p>
               This group project showcases our collaborative abilities as a team
@@ -198,7 +191,7 @@ const AirParkContent = () => {
               for version control and teamwork allowed for effective
               collaboration and streamlined development processes.
             </p>
-            <br />
+
             <p>
               <b>Team Members:</b>
             </p>
