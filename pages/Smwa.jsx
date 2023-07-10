@@ -17,14 +17,14 @@ const Smwa = () => {
   }, [pathname]);
 
   return (
-    <div className="smwa-page">
+    <main className="mainContent px-0">
       <Navbar handleLinkClick={handleLinkClick} />
       <SmwaHeader /> {/* Update the subtitle */}
       <SmwaContent />
       <footer>
         <Contact />
       </footer>
-    </div>
+    </main>
   );
 };
 

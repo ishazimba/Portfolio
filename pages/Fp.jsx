@@ -20,14 +20,14 @@ const Fp = () => {
   }, [pathname]);
 
   return (
-    <div className="project-content-page">
+    <main className="mainContent px-0">
       <Navbar handleLinkClick={handleLinkClick} />
       <FpHeader /> {/* Update the subtitle */}
       <FpContent />
       <footer>
         <Contact />
       </footer>
-    </div>
+    </main>
   );
 };
 

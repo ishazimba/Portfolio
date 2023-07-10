@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Projects = () => {
   return (
     <main id="projects">
-      <h1>Projects</h1>
+      <h2>Projects</h2>
       <div className="projects-container">
         <div className="project-container">
           <Link to="/ncapi" className="project-link">

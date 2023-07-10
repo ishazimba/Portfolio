@@ -21,14 +21,14 @@ const AirPark = () => {
   }, [pathname]);
 
   return (
-    <div className="project-content-page">
+    <main className="mainContent px-0">
       <Navbar handleLinkClick={handleLinkClick} />
       <AirparHeader /> {/* Update the subtitle */}
       <AirParkContent />
       <footer>
         <Contact />
       </footer>
-    </div>
+    </main>
   );
 };
 

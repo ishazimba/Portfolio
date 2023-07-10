@@ -10,35 +10,52 @@ const About = () => {
           alt="profile picture"
           className="max-w-300 mx-auto mb-4 sm:max-w-500 sm:mr-7 sm:mb-0"
         />
-        <div className="about-text px-5 sm:px-0">
+        <div className="about-text ">
           <p>
-            Hello, I'm Isha, a UI/UX designer with a MSc.IT from University of
-            the West of England (UWE), Bristol and a recent graduate of a
-            software engineering bootcamp. With a few months of experience in
-            UI/UX design, I have a solid foundation in front-end and back-end
-            development, including JavaScript, HTML, CSS, and RESTful APIs. I am
-            proficient in using tools like Figma for designing wireframes and
-            prototypes, and have worked with technologies like React, Node.js,
-            Express, PostgreSQL for creating a fullstack application.
+            Hello! 👋 I'm Isha, a Software Engineer and UI/UX designer with a
+            passion for creating beautiful and functional digital experiences. I
+            hold a MSc.IT degree and recently completed an intensive software
+            engineering bootcamp, where I honed my skills in full-stack
+            development.
           </p>
+          <br />
           <p>
-            During my bootcamp, I gained practical experience in working with a
-            Test-Driven Development (TDD) approach and following Agile
-            methodologies. I also have experience collaborating in pair
-            programming and group projects, both in academic and professional
-            settings.
+            My journey in technology started during my university studies, where
+            I delved into the world of coding and discovered my love for
+            problem-solving. I was fascinated by the endless possibilities of
+            building innovative solutions using code. This led me to pursue a
+            software engineering bootcamp, where I aimed to gain confidence and
+            sharpen my skills in JavaScript, the primary language used
+            throughout the program.
           </p>
+          <br />
           <p>
-            Beyond my technical skills, I am interested in art, painting, and
-            photography, which influences my creative approach to design.
-            Originally from Nepal and currently residing in Bristol, UK, I bring
-            a diverse perspective to my work.
+            During the bootcamp, I embraced a collaborative and agile approach
+            to development. I had the opportunity to work on exciting projects,
+            both individually and as part of a team. One of the highlights was a
+            full-stack group project, where we leveraged the power of
+            TypeScript, React, and Node.js to create a robust and scalable
+            application. Additionally, I explored React Native for a mobile app
+            project and even dabbled in Flutter SDK during my final master's
+            dissertation project, expanding my horizons and staying up-to-date
+            with emerging technologies.
           </p>
+          <br />
           <p>
-            I invite you to explore my portfolio, where you can see examples of
-            my design work and projects. Feel free to reach out to me for any
-            opportunities or collaborations. I'm excited to contribute my skills
-            and creativity to meaningful projects.
+            Beyond my technical pursuits, I find inspiration in art, painting,
+            and photography. These creative outlets enhance my design
+            sensibilities and allow me to bring unique perspectives to my work.
+            As someone with a diverse background and origins from Nepal, I value
+            diversity and inclusivity in all aspects of life and strive to
+            incorporate these principles into my projects.
+          </p>
+          <br />
+          <p>
+            Feel free to explore my portfolio, where you can find examples of my
+            design work and projects. I'm always eager to take on new
+            opportunities and collaborate on meaningful projects. If you have
+            any exciting ventures or creative ideas you'd like to discuss, don't
+            hesitate to reach out. Let's bring your vision to life together!
           </p>
         </div>
       </div>

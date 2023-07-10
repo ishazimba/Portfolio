@@ -23,14 +23,14 @@ const UWEMaps = () => {
   }, [pathname]);
 
   return (
-    <div className="project-content-page">
+    <main className="mainContent px-0">
       <Navbar handleLinkClick={handleLinkClick} />
       <UweMapsHeader /> {/* Update the subtitle */}
       <UweMapsContent />
       <footer>
         <Contact />
       </footer>
-    </div>
+    </main>
   );
 };
 

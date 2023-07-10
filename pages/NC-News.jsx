@@ -19,14 +19,14 @@ const NCNews = () => {
   }, [pathname]);
 
   return (
-    <div className="project-content-page">
+    <main className="mainContent px-0">
       <Navbar handleLinkClick={handleLinkClick} />
       <NcNewsHeader /> {/* Update the subtitle */}
       <NcNewsContent />
       <footer>
         <Contact />
       </footer>
-    </div>
+    </main>
   );
 };
 
