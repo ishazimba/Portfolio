@@ -103,7 +103,7 @@ const AirParkContent = () => {
               This group project was developed using a full-stack approach,
               leveraging the following technologies:
             </p>
-            <h4>Backend:</h4>
+            <p>Backend:</p>
             <ul>
               <li>
                 PostgreSQL: The project utilized PostgreSQL as the database
@@ -127,7 +127,7 @@ const AirParkContent = () => {
                 ensure code quality and reliability.
               </li>
             </ul>
-            <h4>Frontend:</h4>
+            <p>Frontend:</p>
             <ul>
               <li>
                 Expo: The project utilized Expo, a powerful toolset, and

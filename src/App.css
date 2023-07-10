@@ -287,18 +287,7 @@ h3 {
   right: -50px;
 }
 .slick-dots {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.slick-dots li {
-  margin: 0 10px;
-}
-
-.slick-dots li button {
-  cursor: pointer;
+  display: none !important;
 }
 
 @media (max-width: 767px) {
@@ -326,11 +315,7 @@ h3 {
     right: -40px;
   }
   .slick-dots {
-    flex-wrap: wrap;
-  }
-
-  .slick-dots li {
-    margin: 0px;
+    display: none !important;
   }
 }
 
@@ -392,6 +377,18 @@ h3 {
 }
 @media (max-width: 768px) {
   p {
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+  ul {
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+  ol {
     font-size: 12px;
     line-height: 1.5;
     margin-bottom: 10px;
