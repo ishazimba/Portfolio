@@ -12,50 +12,52 @@ const About = () => {
         />
         <div className="about-text ">
           <p>
-            Hello! 👋 I'm Isha, a Software Engineer and UI/UX designer with a
-            passion for creating beautiful and functional digital experiences. I
-            hold a MSc.IT degree and recently completed an intensive software
-            engineering bootcamp, where I honed my skills in full-stack
-            development.
+            Hello! 👋 I'm Isha, a passionate Software Engineer and UI/UX
+            designer based in Bristol, UK. I specialize in creating visually
+            appealing and user-friendly digital experiences, bringing expertise
+            in designing intuitive user interfaces and developing seamless
+            frontend solutions. With a Master's degree in Information Technology
+            and recent completion of an intensive software engineering bootcamp,
+            I have honed my skills in full-stack development.
+          </p>
+          <br />
+
+          <p>
+            Throughout the bootcamp, I enthusiastically embraced a collaborative
+            and agile approach to development. I had the privilege of working on
+            exciting projects both independently and as part of a team. One
+            standout experience was a full-stack group project, where we
+            harnessed the power of TypeScript, React Native, and Node.js to
+            craft a robust and scalable application. Additionally, during my
+            final master's dissertation project, I explored the Flutter SDK,
+            ensuring I stay up-to-date with emerging technologies.
           </p>
           <br />
           <p>
-            My journey in technology started during my university studies, where
-            I delved into the world of coding and discovered my love for
-            problem-solving. I was fascinated by the endless possibilities of
-            building innovative solutions using code. This led me to pursue a
-            software engineering bootcamp, where I aimed to gain confidence and
-            sharpen my skills in JavaScript, the primary language used
-            throughout the program.
+            When it comes to my design work, I prioritize a user-centered
+            approach. I meticulously conduct comprehensive research,
+            wireframing, and prototyping to guarantee optimal usability and
+            delightful interactions. Implementing responsive design principles,
+            optimizing performance, and overcoming complex frontend challenges
+            using HTML, CSS, and JavaScript, including frameworks like React,
+            are among my successful achievements.
           </p>
           <br />
           <p>
-            During the bootcamp, I embraced a collaborative and agile approach
-            to development. I had the opportunity to work on exciting projects,
-            both individually and as part of a team. One of the highlights was a
-            full-stack group project, where we leveraged the power of
-            TypeScript, React, and Node.js to create a robust and scalable
-            application. Additionally, I explored React Native for a mobile app
-            project and even dabbled in Flutter SDK during my final master's
-            dissertation project, expanding my horizons and staying up-to-date
-            with emerging technologies.
+            Beyond my technical pursuits, I draw inspiration from art, painting,
+            and photography. These creative outlets enrich my design
+            sensibilities and enable me to infuse unique perspectives into my
+            work. Being someone with a diverse background and hailing from
+            Nepal, I hold a deep appreciation for diversity and inclusivity,
+            which I actively incorporate into my projects.
           </p>
           <br />
           <p>
-            Beyond my technical pursuits, I find inspiration in art, painting,
-            and photography. These creative outlets enhance my design
-            sensibilities and allow me to bring unique perspectives to my work.
-            As someone with a diverse background and origins from Nepal, I value
-            diversity and inclusivity in all aspects of life and strive to
-            incorporate these principles into my projects.
-          </p>
-          <br />
-          <p>
-            Feel free to explore my portfolio, where you can find examples of my
-            design work and projects. I'm always eager to take on new
-            opportunities and collaborate on meaningful projects. If you have
+            Please feel free to explore my portfolio, where you can find
+            examples of my projects. I'm always enthusiastic about taking on new
+            opportunities and collaborating on meaningful endeavors. If you have
             any exciting ventures or creative ideas you'd like to discuss, don't
-            hesitate to reach out. Let's bring your vision to life together!
+            hesitate to reach out.
           </p>
         </div>
       </div>

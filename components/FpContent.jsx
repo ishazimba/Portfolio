@@ -151,11 +151,12 @@ const FpContent = () => {
               href="https://www.figma.com/proto/Q0fUVKI71ivioAX3P43HnB/Untitled?type=design&node-id=2-6&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=2%3A6&mode=design"
               target="_blank"
             >
-              Prototype Link
+              <p>Prototype Link</p>
             </a>
-            <br />
+
             <a class="link" href="https://freeleypalmer.co.uk/" target="_blank">
-              Freeley Palmer
+              {" "}
+              <p>Freeley Palmer</p>
             </a>
           </div>
         </div>

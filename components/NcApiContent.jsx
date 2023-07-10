@@ -88,7 +88,7 @@ const NcApiContent = () => {
               GitHub Link:
               <a href="https://github.com/ishazimba/NC-News" target="_blank">
                 {" "}
-                Github link
+                NC-News API
               </a>
             </p>
             <br />

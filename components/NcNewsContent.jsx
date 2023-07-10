@@ -104,7 +104,7 @@ const NcNewsContent = () => {
               GitHub Link:
               <a href="https://github.com/ishazimba/FE-NC-News" target="_blank">
                 {" "}
-                Github link
+                NC News
               </a>
             </p>
             <br />
