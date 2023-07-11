@@ -357,19 +357,19 @@ h3 {
 }
 @media (max-width: 767px) {
   p {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.5;
     margin-bottom: 10px;
     text-align: justify;
   }
   ul {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.5;
     margin-bottom: 10px;
     text-align: justify;
   }
   ol {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.5;
     margin-bottom: 10px;
     text-align: justify;
