@@ -100,6 +100,13 @@ const NcNewsContent = () => {
       <div class="project-container-new">
         <div class="project-content">
           <div class="project-text">
+            <video
+              src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/nc%20news/videodemo.mov"
+              controls
+              class="project-video"
+            ></video>
+
+            <br />
             <p>
               GitHub Link:
               <a href="https://github.com/ishazimba/FE-NC-News" target="_blank">
@@ -107,7 +114,7 @@ const NcNewsContent = () => {
                 NC News
               </a>
             </p>
-            <br />
+
             <p>
               This project showcases my ability to work with React, consume
               RESTful APIs, implement essential features like commenting and
