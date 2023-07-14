@@ -32,7 +32,7 @@ const Projects = () => {
           <Link to="/ncnews" className="project-link">
             <div className="project-image-container">
               <img
-                src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/nc%20news/nc-front-end.png"
+                src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/nc%20news/nc%20news.png"
                 alt="NC API"
               />
             </div>

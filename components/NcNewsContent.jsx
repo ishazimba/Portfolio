@@ -8,8 +8,8 @@ const NcNewsContent = () => {
       <div class="project-container-new">
         <img
           className="project-content-image"
-          src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/nc%20news/nc-front-end.png"
-          alt="NC API"
+          src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/nc%20news/nc%20news.png"
+          alt="NC News"
         />
         <div class="project-content">
           <div class="project-text">
