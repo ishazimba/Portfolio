@@ -140,6 +140,18 @@ const Skills = () => {
               alt=""
             />
           </div>
+          <div className="slide">
+            <img
+              src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/expo.png"
+              alt=""
+            />
+          </div>
+          <div className="slide">
+            <img
+              src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/axios.png"
+              alt=""
+            />
+          </div>
         </Slider>
       </div>
     </main>
