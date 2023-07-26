@@ -33,7 +33,10 @@ const Navbar = () => {
           className="navbar_link"
           onClick={handleLinkClick}
         >
-          Isha Tamang
+          <img
+            src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/logo.png"
+            alt=""
+          />
         </Link>
       </div>
       {isMobile ? (
