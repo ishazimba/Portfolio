@@ -40,9 +40,8 @@ h3 {
 }
 
 .navbar_logo {
-  font-family: cursive;
-  font-size: 30px;
-  padding-left: 20px;
+  padding-left: 50px;
+  padding-bottom: 20px;
   cursor: pointer;
   font-weight: bolder;
   color: #fff;
