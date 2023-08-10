@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const [isMobile, setIsMobile] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -13,121 +12,110 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
-  const checkWindowSize = () => {
-    setIsMobile(window.innerWidth <= 767);
-  };
-
-  useEffect(() => {
-    checkWindowSize();
-    window.addEventListener("resize", checkWindowSize);
-    return () => {
-      window.removeEventListener("resize", checkWindowSize);
-    };
-  }, []);
-
   return (
-    <nav className="navbar">
-      <div className="navbar_logo">
-        <Link
-          to="/?section=home"
-          className="navbar_link"
-          onClick={handleLinkClick}
-        >
+    <nav
+      className="navbar navbar-expand-lg navbar-dark fixed-top"
+      style={{ backgroundColor: "#15102f" }}
+    >
+      <div className="container">
+        <Link to="/?section=home" className="navbar-brand">
           <img
             src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/logo.png"
-            width={"7%"}
+            width="80"
             alt=""
           />
         </Link>
-      </div>
-      {isMobile ? (
-        <div className="navbar_links mobile" onClick={toggleMenu}>
-          <div className={`hamburger-icon ${isOpen ? "open" : ""}`}>
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
-          </div>
-          {isOpen && (
-            <div className="menu">
+        <button className="navbar-toggler" type="button" onClick={toggleMenu}>
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className={`collapse navbar-collapse ${isOpen ? "show" : ""}`}>
+          <ul className="navbar-nav ml-auto text-right">
+            <li className="nav-item">
               <Link
                 to="/?section=home"
-                className="navbar_link"
+                className="nav-link"
                 onClick={handleLinkClick}
+                style={{ fontSize: "20px" }}
               >
                 Home
               </Link>
+            </li>
+            <li className="nav-item">
               <Link
                 to="/?section=skills"
-                className="navbar_link"
+                className="nav-link"
                 onClick={handleLinkClick}
+                style={{ fontSize: "20px" }}
               >
                 Skills
               </Link>
+            </li>
+            <li className="nav-item">
               <Link
                 to="/?section=about"
-                className="navbar_link"
+                className="nav-link"
                 onClick={handleLinkClick}
+                style={{ fontSize: "20px" }}
               >
                 About
               </Link>
+            </li>
+            <li className="nav-item">
               <Link
                 to="/?section=projects"
-                className="navbar_link"
+                className="nav-link"
                 onClick={handleLinkClick}
+                style={{ fontSize: "20px" }}
               >
                 Projects
               </Link>
-
+            </li>
+            <li className="nav-item">
               <Link
                 to="/?section=contact"
-                className="navbar_link"
+                className="nav-link"
                 onClick={handleLinkClick}
+                style={{ fontSize: "20px" }}
               >
                 Contact
               </Link>
-            </div>
-          )}
+            </li>
+          </ul>
         </div>
-      ) : (
-        <div className="navbar_links">
-          <Link
-            to="/?section=home"
-            className="navbar_link"
-            onClick={handleLinkClick}
-          >
-            Home
-          </Link>
+      </div>
+      <style>
+        {`
+    .navbar-nav .nav-link {
+    margin-left: 20px;
+    color: #fff;
+    
+   
+  }
 
-          <Link
-            to="/?section=skills"
-            className="navbar_link"
-            onClick={handleLinkClick}
-          >
-            Skills
-          </Link>
-          <Link
-            to="/?section=about"
-            className="navbar_link"
-            onClick={handleLinkClick}
-          >
-            About
-          </Link>
-          <Link
-            to="/?section=projects"
-            className="navbar_link"
-            onClick={handleLinkClick}
-          >
-            Projects
-          </Link>
-          <Link
-            to="/?section=contact"
-            className="navbar_link"
-            onClick={handleLinkClick}
-          >
-            Contact
-          </Link>
-        </div>
-      )}
+  .navbar-nav .nav-link:hover {
+    color: #87ceeb;
+    cursor: pointer;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #87ceeb;
+    cursor: pointer;
+  }
+  .navbar-nav.ml-auto {
+    margin-left: auto;
+  }
+
+  @media (max-width: 767px) {
+    .navbar-nav .nav-link {
+      margin-left: 0; 
+      margin-right: 20px; 
+    }
+  }
+      `}
+      </style>
     </nav>
   );
 };
