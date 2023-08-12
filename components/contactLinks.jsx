@@ -3,14 +3,14 @@ import { Github, Linkedin, Envelope } from "react-bootstrap-icons";
 
 const ContactLinks = ({ size }) => {
   const iconStyle = {
-    padding: "0.8rem",
+    padding: "1rem",
     color: "white",
     borderRadius: "50%",
     transition: "background-color 0.5s, color 0.5s",
   };
 
   return (
-    <div className="d-flex gap-4">
+    <div className="d-flex gap-1">
       <a
         href="https://github.com/ishazimba"
         target="_blank"

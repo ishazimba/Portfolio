@@ -28,7 +28,7 @@ const Navbar = () => {
           />
         </Link>
         <div className="flex text-secondary">
-          <ContactLinks size={30} />
+          <ContactLinks size={25} />
         </div>
 
         <button className="navbar-toggler" type="button" onClick={toggleMenu}>
