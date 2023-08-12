@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
+import ContactLinks from "./contactLinks";
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -21,10 +23,14 @@ const Navbar = () => {
         <Link to="/?section=home" className="navbar-brand">
           <img
             src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/logo.png"
-            width="80"
+            width="60"
             alt=""
           />
         </Link>
+        <div className="flex text-secondary">
+          <ContactLinks size={30} />
+        </div>
+
         <button className="navbar-toggler" type="button" onClick={toggleMenu}>
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -85,36 +91,38 @@ const Navbar = () => {
       </div>
       <style>
         {`
-    .navbar-nav .nav-link {
-    margin-left: 20px;
-    color: #fff;
-    
-   
-  }
+          .navbar-nav .nav-link {
+            margin-left: 20px;
+            color: #fff;
+          }
 
-  .navbar-nav .nav-link:hover {
-    color: #87ceeb;
-    cursor: pointer;
-  }
-  .navbar-dark .navbar-nav .nav-link {
-    color: #fff;
-  }
-  
-  .navbar-dark .navbar-nav .nav-link:hover {
-    color: #87ceeb;
-    cursor: pointer;
-  }
-  .navbar-nav.ml-auto {
-    margin-left: auto;
-  }
+          .navbar-nav .nav-link:hover {
+            color: #87ceeb;
+            cursor: pointer;
+          }
+          
+     
 
-  @media (max-width: 767px) {
-    .navbar-nav .nav-link {
-      margin-left: 0; 
-      margin-right: 20px; 
-    }
-  }
-      `}
+          .navbar-dark .navbar-nav .nav-link {
+            color: #fff;
+          }
+          
+          .navbar-dark .navbar-nav .nav-link:hover {
+            color: #87ceeb;
+            cursor: pointer;
+          }
+          
+          .navbar-nav.ml-auto {
+            margin-left: auto;
+          }
+
+          @media (max-width: 767px) {
+            .navbar-nav .nav-link {
+              margin-left: 0; 
+              margin-right: 20px; 
+            }
+          }
+        `}
       </style>
     </nav>
   );

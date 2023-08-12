@@ -1,11 +1,11 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
-import { ThemeProvider } from "./ThemeContext";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+// Use createRoot to mount your app
+const root = document.getElementById("root");
+const rootElement = <App />;
+
+// Use createRoot to mount your app
+const appRoot = createRoot(root);
+appRoot.render(rootElement);
