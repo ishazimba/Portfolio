@@ -1,10 +1,9 @@
 import React from "react";
 import { Link } from "react-scroll";
-import styled from "styled-components"; // Import styled from styled-components
+import styled from "styled-components";
 
 import backgroundImage from "../src/assets/herobg.jpg";
 
-// Define a styled component with custom styles for desktop view
 const DesktopImageContainer = styled.div`
   @media (min-width: 992px) {
     padding-top: 12rem;
@@ -30,8 +29,8 @@ const StyledButton = styled(Link)`
   }
 `;
 const Container = styled.div`
-  padding-bottom: 0; /* Default padding for mobile */
-  padding-top: 5rem; /* Default padding for all views */
+  padding-bottom: 0;
+  padding-top: 5rem;
 
   @media (min-width: 992px) {
     padding-bottom: 9rem; /* Padding for desktop view */
@@ -58,6 +57,7 @@ const Header = () => {
                 style={{
                   paddingBottom: "1rem",
                   "@media (min-width: 992px)": "0.3rem",
+                  fontWeight: "bold",
                 }}
               >
                 Hi, I'm <span style={{ color: "#07E2F4" }}>Isha</span>
@@ -94,7 +94,7 @@ const Header = () => {
           <DesktopImageContainer className="col-md-3">
             <div className="text-center">
               <img
-                src="../src/assets/computer.png"
+                src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/computer.png"
                 alt="Project Image"
                 className="img-fluid"
                 style={{

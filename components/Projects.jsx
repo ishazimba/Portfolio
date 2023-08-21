@@ -36,7 +36,10 @@ const Container = styled.div`
 const Projects = () => {
   return (
     <>
-      <main id="projects" style={{ backgroundColor: "black", color: "white" }}>
+      <main
+        id="projects"
+        style={{ backgroundColor: "#000202", color: "white" }}
+      >
         <h2 className={styles.sectionHeadText}>Projects</h2>
         <span style={{ color: "black" }}>Projects</span>
 
