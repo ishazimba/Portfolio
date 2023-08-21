@@ -21,9 +21,6 @@ const AirPark = () => {
       <Navbar handleLinkClick={handleLinkClick} />
       <AirparHeader />
       <AirParkContent />
-      <footer>
-        <Contact />
-      </footer>
     </main>
   );
 };

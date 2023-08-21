@@ -21,9 +21,6 @@ const NcApi = () => {
       <Navbar handleLinkClick={handleLinkClick} />
       <NcApiHeader />
       <NcApiContent />
-      <footer>
-        <Contact />
-      </footer>
     </main>
   );
 };

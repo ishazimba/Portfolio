@@ -7,6 +7,7 @@ import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import Skills from "../components/Skills";
 import Smwa from "../pages/Smwa";
+import StarsCanvas from "../components/canvas/Stars";
 
 const LandingPage = () => {
   const location = useLocation();
@@ -27,12 +28,14 @@ const LandingPage = () => {
         <section id="home">
           <Header />
         </section>
-        <section id="skills">
-          <Skills />
-        </section>
         <section id="about">
           <About />
         </section>
+
+        <section id="skills">
+          <Skills />
+        </section>
+
         <section id="projects">
           <Projects />
         </section>

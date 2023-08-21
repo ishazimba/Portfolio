@@ -21,9 +21,6 @@ const Fp = () => {
       <Navbar handleLinkClick={handleLinkClick} />
       <FpHeader />
       <FpContent />
-      <footer>
-        <Contact />
-      </footer>
     </main>
   );
 };

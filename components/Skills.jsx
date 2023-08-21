@@ -52,7 +52,7 @@ const Skills = () => {
     ],
   };
   return (
-    <main id="skills">
+    <main id="skills" style={{ backgroundColor: "white" }}>
       <h2>Skills</h2>
       <div className="slider-container">
         <Slider {...settings}>

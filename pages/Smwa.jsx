@@ -21,9 +21,6 @@ const Smwa = () => {
       <Navbar handleLinkClick={handleLinkClick} />
       <SmwaHeader />
       <SmwaContent />
-      <footer>
-        <Contact />
-      </footer>
     </main>
   );
 };

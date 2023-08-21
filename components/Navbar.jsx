@@ -15,10 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav
-      className="navbar navbar-expand-lg navbar-dark fixed-top"
-      style={{ backgroundColor: "#15102f" }}
-    >
+    <nav className="navbar navbar-expand-lg navbar-dark fixed-top bg-black">
       <div className="container">
         <Link to="/?section=home" className="navbar-brand">
           <img

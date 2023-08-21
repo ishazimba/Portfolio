@@ -21,9 +21,6 @@ const NCNews = () => {
       <Navbar handleLinkClick={handleLinkClick} />
       <NcNewsHeader />
       <NcNewsContent />
-      <footer>
-        <Contact />
-      </footer>
     </main>
   );
 };

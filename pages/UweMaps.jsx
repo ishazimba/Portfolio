@@ -21,9 +21,7 @@ const UWEMaps = () => {
       <Navbar handleLinkClick={handleLinkClick} />
       <UweMapsHeader />
       <UweMapsContent />
-      <footer>
-        <Contact />
-      </footer>
+    
     </main>
   );
 };
