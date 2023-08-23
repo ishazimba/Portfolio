@@ -6,11 +6,6 @@ const NcNewsContent = () => {
       <h2>Project Overview </h2>
 
       <div class="project-container-new">
-        <img
-          className="project-content-image"
-          src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/nc%20news/nc%20news.png"
-          alt="NC News"
-        />
         <div class="project-content">
           <div class="project-text">
             <p>

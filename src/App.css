@@ -15,6 +15,21 @@ body {
   overflow-x: hidden;
 }
 
+/* For tablet screens */
+@media (max-width: 991.98px) {
+  .row-cols-3 {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 767.98px) {
+  .row-cols-3 {
+    flex-direction: column;
+  }
+}
+
 .custom-background {
   background-image: url("../src/assets/herobg.jpg");
 }

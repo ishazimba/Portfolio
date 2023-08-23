@@ -6,11 +6,6 @@ const UweMapsContent = () => {
       <h2>Project Overview </h2>
 
       <div class="project-container-new">
-        <img
-          className="project-content-image"
-          src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/uwemaps/uwemaps.png"
-          alt="Uwe Maps"
-        />
         <div class="project-content">
           <div class="project-text">
             <p>

@@ -20,25 +20,16 @@ import {
   tesla,
   shopify,
   carrent,
+  ncapi,
+  ncnews,
+  airpark,
+  uwe,
+  fp,
+  smwa,
   jobit,
   tripguide,
   threejs,
 } from "../assets";
-
-export const navLinks = [
-  {
-    id: "about",
-    title: "About",
-  },
-  {
-    id: "work",
-    title: "Work",
-  },
-  {
-    id: "contact",
-    title: "Contact",
-  },
-];
 
 const services = [
   {
@@ -114,152 +105,176 @@ const technologies = [
   },
 ];
 
-const experiences = [
-  {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-];
-
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
-
 const projects = [
   {
-    name: "Car Rent",
+    idname: "airpark",
+    name: "AirPark",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A cross platform mobile app that offers a seamless and convenient parking experience for the travelers.",
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        name: "node.js",
+        color: "green-text-gradient",
+      },
+
+      {
+        name: "Google cloud storage",
+        color: "pink-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
+        name: "passport.js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "jest",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "expo",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react native",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "typeScript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "axios",
+        color: "pink-text-gradient",
       },
       {
         name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: airpark,
   },
   {
-    name: "Job IT",
+    idname: "ncapi",
+    name: "NC API",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A RESTful API designed to interact with a news database containing articles, topics, users, and comments.",
+    tags: [
+      {
+        name: "express.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "postgreSQL",
+        color: "green-text-gradient",
+      },
+      {
+        name: "node.js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "jest",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: ncapi,
+  },
+  {
+    idname: "ncnews",
+    name: "NC News",
+    description:
+      "A React application that provides users with a platform to view and interact with articles sourced from the NC News RESTful API.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "ncnews api",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "git",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: ncnews,
   },
   {
-    name: "Trip Guide",
+    idname: "smwa",
+    name: "Student Mental Wellbeing Application",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Designing the user experience of a mobile application which was intended to be used by students seeking mental well-being tips, suggestions, and solutions to cope with their situation.",
     tags: [
       {
-        name: "nextjs",
+        name: "figma",
+        color: "blue-text-gradient",
+      },
+
+      {
+        name: "user research",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "empathy map",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "story board",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "wireframing",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: smwa,
+  },
+  {
+    idname: "fp",
+    name: "Freeley Palmer",
+
+    description:
+      "Designing the wireframes and the prototype of the web application using Figma.",
+    tags: [
+      {
+        name: "figma",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "wireframing ",
+        color: "green-text-gradient",
+      },
+      {
+        name: "iterative improvements",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: fp,
+  },
+  {
+    idname: "uwemaps",
+    name: "UWE Campus Map",
+    description:
+      "A cross platform mobile application to improve the current UWE campus map and help students, staff, and visitors find a specific location on campus.",
+    tags: [
+      {
+        name: "flutter SDK",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "dart",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Google maps api",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Android studio",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: uwe,
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, projects };

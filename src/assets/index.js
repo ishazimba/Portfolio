@@ -25,6 +25,12 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import ncapi from "./ncapi.png";
+import ncnews from "./ncnews.png";
+import airpark from "./airpark.png";
+import smwa from "./smwa.png";
+import uwe from "./uwe.png";
+import fp from "./fp.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -57,6 +63,12 @@ export {
   starbucks,
   tesla,
   carrent,
+  ncapi,
+  ncnews,
+  airpark,
+  smwa,
+  uwe,
+  fp,
   jobit,
   tripguide,
 };

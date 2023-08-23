@@ -1,12 +1,14 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import Contact from "../components/Contact";
+
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import FpHeader from "../components/FpHeader";
 import FpContent from "../components/FpContent";
+import { useParams } from "react-router-dom";
 
 const Fp = () => {
+  const { name } = useParams();
   const { pathname } = useLocation();
   const handleLinkClick = (sectionId) => {
     const landingPageUrl = "/";

@@ -65,26 +65,25 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-17 max-w-3xl lead-lg"
       >
-        Hello! 👋 I'm Isha, a passionate Software Engineer and UI/UX Designer
-        based in Bristol, UK. I specialize in creating visually appealing and
-        user-friendly digital experiences, bringing expertise in designing
-        intuitive user interfaces and developing seamless frontend solutions.
-        With a Master's degree in Information Technology and recent completion
-        of an intensive software engineering bootcamp, I have honed my skills in
-        full-stack development.
+        Hello! 👋 I'm Isha, a passionate Software Developer based in Bristol,
+        UK. I specialize in creating visually appealing and user-friendly
+        digital experiences, bringing expertise in designing intuitive user
+        interfaces and developing seamless frontend solutions. With a Master's
+        degree in Information Technology and recent completion of an intensive
+        software engineering bootcamp, I have honed my skills in full-stack
+        development.
       </motion.p>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Throughout the bootcamp, I enthusiastically embraced a collaborative and
-        agile approach to development. I had the privilege of working on
-        exciting projects both independently and as part of a team. One standout
-        experience was a full-stack group project, where we harnessed the power
-        of TypeScript, React Native, and Node.js to craft a robust and scalable
-        application. Additionally, during my final master's dissertation
-        project, I explored the Flutter SDK, ensuring I stay up-to-date with
+        My collaborative spirit shines through agile practices embraced during
+        the bootcamp. I had the privilege of working on exciting projects both
+        independently and as part of a team. One standout experience was a
+        full-stack group project, where we harnessed the power of TypeScript,
+        React Native, and Node.js to craft a robust and scalable application. My
+        master's research delved into Flutter, showcasing my adaptability to
         emerging technologies.
       </motion.p>
       <motion.p
@@ -108,6 +107,13 @@ const About = () => {
         a diverse background and hailing from Nepal, I hold a deep appreciation
         for diversity and inclusivity, which I actively incorporate into my
         projects.
+      </motion.p>
+      <motion.p
+        variants={fadeIn("", "", 0.1, 1)}
+        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+      >
+        As I explore new opportunities, I'm eager to contribute my expertise.
+        Let's connect and collaborate!
       </motion.p>
 
       <div

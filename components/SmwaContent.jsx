@@ -6,11 +6,6 @@ const SmwaContent = () => {
       <h2>Problem Statement </h2>
 
       <div class="project-container-new">
-        <img
-          className="project-content-image"
-          src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/SMWA/SMWA.png"
-          alt="Student Mental Wellbeing Application"
-        />
         <div class="project-content">
           <div class="project-text">
             <p>

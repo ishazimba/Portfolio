@@ -1,10 +1,11 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import Contact from "../components/Contact";
+
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import AirparHeader from "../components/AirParkHeader";
 import AirParkContent from "../components/AirparkContent";
+import { projects } from "../src/constants";
 
 const AirPark = () => {
   const { pathname } = useLocation();

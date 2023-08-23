@@ -6,11 +6,6 @@ const FpContent = () => {
       <h2>Project Overview </h2>
 
       <div class="project-container-new">
-        <img
-          className="project-content-image"
-          src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/fp/fp-image.png"
-          alt="FP CAPITAL"
-        />
         <div class="project-content">
           <div class="project-text">
             <p>

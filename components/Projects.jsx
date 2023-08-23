@@ -4,215 +4,91 @@ import styled from "styled-components";
 import { styles } from "../src/styles";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../src/utils/motion";
+import { projects } from "../src/constants";
+import { SectionWrapper } from "../src/hoc";
+import { Tilt } from "react-tilt";
 
-const StyledButton = styled(Link)`
-  width: 200px;
-  background-color: #007e88;
+const ProjectCard = ({ idname, index, name, description, tags, image }) => {
+  const tiltStyles = {
+    maxWidth: "100%",
+    margin: "0 auto",
+    padding: "1rem",
+    backgroundColor: "var(--tertiary-color)",
+    borderRadius: "1rem",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+    height: "100%",
+  };
 
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
+  const imageStyles = {
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
+    borderRadius: "1rem",
+  };
 
-  &:hover {
-    background-color: #00a8d5;
-  }
-`;
-const Container = styled.div`
-  padding-bottom: 0; /* Default padding for mobile */
-  padding-top: 5rem; /* Default padding for all views */
+  return (
+    <motion.div className="col-lg- col-md-6 col-sm-12 mb-4">
+      <Link to={`/${idname}`} style={{ textDecoration: "none" }}>
+        <Tilt
+          options={{
+            max: 45,
+            scale: 1,
+            speed: 450,
+          }}
+          style={tiltStyles}
+        >
+          <div className="position-relative w-full h-50">
+            <img src={image} alt="project_image" style={imageStyles} />
+          </div>
 
-  @media (min-width: 992px) {
-    padding-bottom: 9rem; /* Padding for desktop view */
-  }
-`;
+          <div className="mt-3">
+            <h3 className="text-white font-weight-bold text-24px">{name}</h3>
+            <p className="mt-2 text-gray-600 text-14px">{description}</p>
+          </div>
+
+          <div className="mt-3 d-flex flex-wrap gap-2">
+            {tags.map((tag) => (
+              <p
+                key={`${name}-${tag.name}`}
+                className={`text-14px ${tag.color}`}
+              >
+                #{tag.name}
+              </p>
+            ))}
+          </div>
+        </Tilt>
+      </Link>
+    </motion.div>
+  );
+};
 
 const Projects = () => {
   return (
     <>
-      <main
-        id="projects"
-        style={{ backgroundColor: "#000202", color: "white" }}
-      >
+      <motion.div variants={textVariant()} className="text-center">
+        <p className={styles.sectionSubText}>My work so far</p>
         <h2 className={styles.sectionHeadText}>Projects</h2>
-        <span style={{ color: "black" }}>Projects</span>
+      </motion.div>
 
-        <div className="projects-container">
-          <div className="project-container">
-            <Link to="/ncapi" className="project-link">
-              <div className="project-image-container">
-                <img
-                  src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/nc%20news/nc-api.png"
-                  alt="NC API"
-                />
-              </div>
-              <div className="project-info">
-                <h3>NC News API</h3>
-                <p>
-                  A RESTful API designed to interact with a news database
-                  containing articles, topics, users, and comments.
-                </p>
-              </div>
-              <StyledButton
-                to="projects"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                View Project
-              </StyledButton>
-            </Link>
-          </div>
-          <div className="project-container">
-            <Link to="/ncnews" className="project-link">
-              <div className="project-image-container">
-                <img
-                  src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/nc%20news/nc%20news.png"
-                  alt="NC API"
-                />
-              </div>
-              <div className="project-info">
-                <h3>NC News</h3>
-                <p>
-                  A React application that provides users with a platform to
-                  view and interact with articles sourced from the NC News
-                  RESTful API.
-                </p>
-              </div>
-              <StyledButton
-                to="projects"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                View Project
-              </StyledButton>
-            </Link>
-          </div>
+      <div className="w-100">
+        <motion.p
+          variants={fadeIn("", "", 0.1, 1)}
+          className="mt-4 text-secondary text-17 max-w-3xl lead-lg"
+        >
+          Following projects highlight my skills, experience, and
+          problem-solving prowess. They showcase my proficiency in diverse
+          technologies and effective project management.
+        </motion.p>
+        <div className="mt-4 row row-cols-1 row-cols-md-2 row-cols-lg-3 gap-6 justify-content-center">
+          {projects.map((project, index) => (
+            <ProjectCard key={`project-${index}`} index={index} {...project} />
+          ))}
         </div>
-
-        <div className="projects-container">
-          <div className="project-container">
-            <Link to="/airpark" className="project-link">
-              <div className="project-image-container">
-                <img
-                  src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/airpark/airpark.png"
-                  alt="AirPark"
-                />
-              </div>
-              <div className="project-info">
-                <h3>AirPark</h3>
-                <p>
-                  A cross platform mobile app that offers a seamless and
-                  convenient parking experience for the travelers.
-                </p>
-              </div>
-              <StyledButton
-                to="projects"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                View Project
-              </StyledButton>
-            </Link>
-          </div>
-          <div className="project-container">
-            <Link to="/UWEMaps" className="project-link">
-              <div className="project-image-container">
-                <img
-                  src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/uwemaps/uwemaps.png"
-                  alt="NC API"
-                />
-              </div>
-              <div className="project-info">
-                <h3>UWE Campus Map</h3>
-                <p>
-                  A cross platform mobile application to improve the current UWE
-                  campus map and help students, staff, and visitors find a
-                  specific location on campus.
-                </p>
-              </div>
-              <StyledButton
-                to="projects"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                View Project
-              </StyledButton>
-            </Link>
-          </div>
-        </div>
-
-        <div className="projects-container">
-          <div className="project-container">
-            <Link to="/smwa" className="project-link">
-              <div className="project-image-container">
-                <img
-                  src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/SMWA/SMWA.png"
-                  alt="Student Mental Wellbeing Application"
-                />
-              </div>
-              <div className="project-info">
-                <h3>Student Mental Wellbeing Application</h3>
-                <p>
-                  Designing the user experience of a mobile application which
-                  was intended to be used by students seeking mental well-being
-                  tips, suggestions, and solutions to cope with their situation.
-                </p>
-              </div>
-              <StyledButton
-                to="projects"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                View Project
-              </StyledButton>
-            </Link>
-          </div>
-          <div className="project-container">
-            <Link to="/fp" className="project-link">
-              <div className="project-image-container">
-                <img
-                  src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/fp/fp%20-front.png"
-                  alt="FP CAPITAL"
-                />
-              </div>
-              <div className="project-info">
-                <h3>Freeley Palmer</h3>
-                <p>
-                  Designing the wireframes and the prototype of the web
-                  application using Figma.
-                </p>
-              </div>
-              <StyledButton
-                to="projects"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                View Project
-              </StyledButton>
-            </Link>
-          </div>
-        </div>
-      </main>
+      </div>
     </>
   );
 };
 
-export default Projects;
+export default SectionWrapper(Projects, "");
