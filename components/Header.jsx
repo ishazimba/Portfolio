@@ -5,7 +5,7 @@ import styled from "styled-components";
 import backgroundImage from "../src/assets/herobg.jpg";
 
 const DesktopImageContainer = styled.div`
-  @media (min-width: 992px) {
+  @media (minwidth: 992px) {
     padding-top: 12rem;
   }
 `;
@@ -32,7 +32,7 @@ const Container = styled.div`
   padding-bottom: 0;
   padding-top: 5rem;
 
-  @media (min-width: 992px) {
+  @media (minwidth: 992px) {
     padding-bottom: 9rem; /* Padding for desktop view */
   }
 `;
@@ -56,7 +56,7 @@ const Header = () => {
                 className="text-white mb-3"
                 style={{
                   paddingBottom: "1rem",
-                  "@media (min-width: 992px)": "0.3rem",
+                  "@media (minWidth: 992px)": "0.3rem",
                   fontWeight: "bold",
                 }}
               >
@@ -66,7 +66,7 @@ const Header = () => {
                 className="text-white mb-3"
                 style={{
                   paddingBottom: "1.5rem",
-                  "@media (min-width: 992px)": "0.5rem",
+                  "@media (minWidth: 992px)": "0.5rem",
                 }}
               >
                 I develop user interfaces <br className="d-sm-block" /> and web
