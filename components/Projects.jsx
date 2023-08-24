@@ -73,7 +73,7 @@ const Projects = () => {
       </div>
 
       <div className="w-100">
-        <motion.p className="mt-4 text-secondary text-17 max-w-3xl lead-lg">
+        <motion.p className="mt-4 text-secondary text-17 max-w-3xl lead-lg text-justify">
           Following projects highlight my skills, experience, and
           problem-solving prowess. They showcase my proficiency in diverse
           technologies and effective project management.

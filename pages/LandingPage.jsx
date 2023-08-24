@@ -6,7 +6,7 @@ import Contact from "../components/Contact";
 import Header from "../components/Header";
 
 import Skills from "../components/Skills";
-
+import Tech from "../components/Tech";
 import StarsCanvas from "../components/canvas/Stars";
 
 const LandingPage = () => {

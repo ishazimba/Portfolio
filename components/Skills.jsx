@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Tech from "./Tech";
 
 const Skills = () => {
   const CustomPrevArrow = ({ onClick }) => (
@@ -53,7 +54,7 @@ const Skills = () => {
   };
   return (
     <main id="skills" style={{ backgroundColor: "white" }}>
-      <h2>Skills</h2>
+      <h2>Tech Stack</h2>
       <div className="slider-container">
         <Slider {...settings}>
           <div className="slide">

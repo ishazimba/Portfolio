@@ -8,18 +8,18 @@ import { fadeIn, textVariant } from "../src/utils/motion";
 import { SectionWrapper } from "../src/hoc";
 
 const ServiceCard = ({ index, title, icon }) => (
-  <div className="col-xs-12 col-md-6 col-lg-4">
+  <div className="col-xs-8 col-md-6 col-lg-3">
     <Tilt className="tilt">
       <motion.div
         variants={fadeIn("", "", 0.1, 1)}
         className=" rounded p-4 service-card"
         style={{
           backgroundColor: "var(--tertiary-color)",
-          flexBasis: "100%", // Default to full width
+          flexBasis: "100%",
           margin: "1rem",
           display: "flex",
           flexDirection: "column",
-          justifyContent: "space-between", // To vertically align content
+          justifyContent: "space-between",
         }}
       >
         <motion.div
@@ -29,7 +29,7 @@ const ServiceCard = ({ index, title, icon }) => (
             speed: 200,
           }}
           className="bg-tertiary rounded-20 py-3 px-3 d-flex justify-content-center align-items-center"
-          style={{ flex: "1" }} // Allow this section to grow and fill space
+          style={{ flex: "1" }}
         >
           <img
             src={icon}
@@ -116,15 +116,7 @@ const About = () => {
         Let's connect and collaborate!
       </motion.p>
 
-      <div
-        className="mt-20 row gap-2"
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "center",
-          margin: "1rem",
-        }}
-      >
+      <div className="mt-4 row row-cols-1 row-cols-md-2 row-cols-lg-3 gap-6 justify-content-center">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

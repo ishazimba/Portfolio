@@ -33,7 +33,7 @@ const Container = styled.div`
   padding-top: 5rem;
 
   @media (minwidth: 992px) {
-    padding-bottom: 9rem; /* Padding for desktop view */
+    padding-bottom: 9rem;
   }
 `;
 
@@ -65,7 +65,8 @@ const Header = () => {
               <h3
                 className="text-white mb-3"
                 style={{
-                  paddingBottom: "1.5rem",
+                  paddingBottom: "2.5rem",
+
                   "@media (minWidth: 992px)": "0.5rem",
                 }}
               >
@@ -76,7 +77,8 @@ const Header = () => {
                 className="text-center pt-4 pb-2"
                 style={{
                   paddingRight: "20rem",
-                  marginBottom: window.innerWidth >= 700 ? "0.5rem" : "10rem",
+
+                  marginBottom: window.innerWidth >= 992 ? "10rem" : "1rem",
                 }}
               >
                 <StyledButton
@@ -84,7 +86,7 @@ const Header = () => {
                   spy={true}
                   smooth={true}
                   offset={-70}
-                  duration={500}
+                  duration={100}
                 >
                   Projects
                 </StyledButton>
@@ -99,6 +101,8 @@ const Header = () => {
                 className="img-fluid"
                 style={{
                   maxWidth: "100%",
+
+                  "@media (minWidth: 992px)": "50%",
                 }}
               />
             </div>
