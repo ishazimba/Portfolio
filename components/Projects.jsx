@@ -67,16 +67,13 @@ const ProjectCard = ({ idname, index, name, description, tags, image }) => {
 const Projects = () => {
   return (
     <>
-      <motion.div variants={textVariant()} className="text-center">
+      <div className="text-center">
         <p className={styles.sectionSubText}>My work so far</p>
         <h2 className={styles.sectionHeadText}>Projects</h2>
-      </motion.div>
+      </div>
 
       <div className="w-100">
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          className="mt-4 text-secondary text-17 max-w-3xl lead-lg"
-        >
+        <motion.p className="mt-4 text-secondary text-17 max-w-3xl lead-lg">
           Following projects highlight my skills, experience, and
           problem-solving prowess. They showcase my proficiency in diverse
           technologies and effective project management.

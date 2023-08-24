@@ -16,7 +16,7 @@ body {
 }
 
 /* For tablet screens */
-@media (maxwidth: 991.98px) {
+@media (max-width: 991.98px) {
   .row-cols-3 {
     flex-direction: row;
     flex-wrap: wrap;
@@ -24,7 +24,7 @@ body {
 }
 
 /* For mobile screens */
-@media (maxwidth: 767.98px) {
+@media (max-width: 767.98px) {
   .row-cols-3 {
     flex-direction: column;
   }
@@ -58,10 +58,6 @@ body {
   height: 100%;
   z-index: 0;
 }
-
-/* Rest of your styles */
-
-/* Add any other necessary styles for your contact form content */
 
 :root {
   --primary-color: #000000;
@@ -173,7 +169,7 @@ h3 {
   display: none !important;
 }
 
-@media (maxwidth: 767px) {
+@media (max-width: 767px) {
   .slider-container {
     padding: 20px;
   }
@@ -264,7 +260,7 @@ h3 {
   margin-bottom: 5px;
 }
 
-@media (maxwidth: 767px) {
+@media (max-width: 767px) {
   .content {
     padding: 2rem;
   }
@@ -332,7 +328,7 @@ h3 {
   width: 50px;
 }
 
-@media (maxwidth: 767px) {
+@media (max-width: 767px) {
   #contact_me {
     padding-top: 20px;
     padding-bottom: 50px;
