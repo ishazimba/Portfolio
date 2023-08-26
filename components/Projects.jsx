@@ -32,7 +32,7 @@ const ProjectCard = ({ idname, index, name, description, tags, image }) => {
   return (
     <motion.div
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-      className="col-lg-4 col-md-6 col-sm-12 mb-4"
+      className="col-lg-4 col-md-6 col-sm-8 mb-4"
     >
       <Link to={`/${idname}`} style={{ textDecoration: "none" }}>
         <Tilt
