@@ -7,7 +7,6 @@ import { fadeIn, textVariant } from "../src/utils/motion";
 import { projects } from "../src/constants";
 import { SectionWrapper } from "../src/hoc";
 import { Tilt } from "react-tilt";
-import { slideIn } from "../src/utils/motion";
 
 const ProjectCard = ({ idname, index, name, description, tags, image }) => {
   const tiltStyles = {
@@ -30,10 +29,7 @@ const ProjectCard = ({ idname, index, name, description, tags, image }) => {
   };
 
   return (
-    <motion.div
-      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-      className="col-lg-4 col-md-6 col-sm-8 mb-4"
-    >
+    <motion.div className="col-lg- col-md-6 col-sm-12 mb-4">
       <Link to={`/${idname}`} style={{ textDecoration: "none" }}>
         <Tilt
           options={{
@@ -87,11 +83,11 @@ const Projects = () => {
           problem-solving prowess. They showcase my proficiency in diverse
           technologies and effective project management.
         </motion.p>
-      </div>
-      <div className="mt-4 row row-cols-1 row-cols-md-2 row-cols-lg-3 gap-6 justify-content-center">
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))}
+        <motion.div className="mt-4 row row-cols-1 row-cols-md-2 row-cols-lg-3 gap-6 justify-content-center">
+          {projects.map((project, index) => (
+            <ProjectCard key={`project-${index}`} index={index} {...project} />
+          ))}
+        </motion.div>
       </div>
     </>
   );

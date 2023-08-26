@@ -171,11 +171,6 @@ const Contact = () => {
                 <ContactLinks size="2rem" />
               </div>
             </motion.div>
-
-            <motion.div
-              variants={slideIn("right", "tween", 0.2, 1)}
-              className="xs:flex-1 xs:h-auto md:h-[400px] h-[250px]"
-            ></motion.div>
           </div>
           <div className="footer mt-8 sm:mt-16 md:mt-20 lg:mt-24">
             <p

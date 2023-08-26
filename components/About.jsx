@@ -11,7 +11,7 @@ const ServiceCard = ({ index, title, icon }) => (
   <div className="col-xs-6 col-md-4 col-lg-3">
     <Tilt className="tilt">
       <motion.div
-        variants={fadeIn("", "", 0.1, 1)}
+        variants={fadeIn("up", "spring", index * 0.5, 0.75)}
         className=" rounded p-4 service-card"
         style={{
           backgroundColor: "var(--tertiary-color)",
