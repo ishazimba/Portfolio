@@ -35,6 +35,7 @@ import fp from "./fp.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import herobg from "./herobg.jpg";
 
 export {
   logo,
@@ -71,4 +72,5 @@ export {
   fp,
   jobit,
   tripguide,
+  herobg,
 };

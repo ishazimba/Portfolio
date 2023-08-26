@@ -83,7 +83,7 @@ const Contact = () => {
               variants={slideIn("left", "tween", 0.2, 1)}
               className="flex-1 p-4 border-none"
               style={{
-                backgroundColor: "var(--tertiary-color)", // Use custom tertiary color
+                backgroundColor: "var(--tertiary-color)",
                 maxWidth: "520px",
                 padding: "40px",
                 borderRadius: "20px",
@@ -103,7 +103,7 @@ const Contact = () => {
               <Form
                 ref={formRef}
                 onSubmit={handleSubmit}
-                className="mt-4 flex flex-col gap-5" // Adjust the gap between form fields
+                className="mt-4 flex flex-col gap-5"
               >
                 <Form.Group className="mb-4">
                   {" "}
@@ -121,7 +121,6 @@ const Contact = () => {
                 </Form.Group>
                 <Form.Group className="mb-4">
                   {" "}
-                  {/* Add Bootstrap Form.Group */}
                   <Form.Label className="text-white font-medium">
                     Your Email
                   </Form.Label>
@@ -136,7 +135,6 @@ const Contact = () => {
                 </Form.Group>
                 <Form.Group className="mb-4">
                   {" "}
-                  {/* Add Bootstrap Form.Group */}
                   <Form.Label className="text-white font-medium">
                     Your Message
                   </Form.Label>
