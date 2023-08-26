@@ -12,6 +12,8 @@ import { styles } from "../src/styles";
 import { slideIn } from "../src/utils/motion";
 import ContactLinks from "./contactLinks";
 
+import config from "../config";
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -19,6 +21,9 @@ const Contact = () => {
     email: "",
     message: "",
   });
+  const emailServiceId = config.emailServiceId;
+  const emailTemplateId = config.emailTemplateId;
+  const emailUserId = config.emailUserId;
 
   const [loading, setLoading] = useState(false);
 
@@ -38,8 +43,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_i4og8wv",
-        "template_o8mgu4h",
+        emailServiceId,
+        emailTemplateId,
 
         {
           from_name: form.name,
@@ -48,7 +53,7 @@ const Contact = () => {
           to_email: "isha.zimba@gmail.com",
           message: form.message,
         },
-        "-hxFFTqgIr33Uiikz"
+        emailUserId
       )
       .then(
         () => {
@@ -64,6 +69,10 @@ const Contact = () => {
         (error) => {
           setLoading(false);
           console.error(error);
+          if (error.response) {
+            console.log("EmailJS Response Status:", error.response.status);
+            console.log("EmailJS Response Text:", error.response.text);
+          }
 
           alert("Ahh, something went wrong. Please try again.");
         }
@@ -107,44 +116,35 @@ const Contact = () => {
               >
                 <Form.Group className="mb-4">
                   {" "}
-                  <Form.Label className="text-white font-medium">
-                    Your Name
-                  </Form.Label>
                   <Form.Control
                     type="text"
                     name="name"
                     value={form.name}
                     onChange={handleChange}
-                    placeholder="Enter your name here"
+                    placeholder="Name"
                     className="bg-white-100 py-2 px-3 text-tertiary rounded-lg outline-none border-none font-medium"
                   />
                 </Form.Group>
                 <Form.Group className="mb-4">
                   {" "}
-                  <Form.Label className="text-white font-medium">
-                    Your Email
-                  </Form.Label>
                   <Form.Control
                     type="email"
                     name="email"
                     value={form.email}
                     onChange={handleChange}
-                    placeholder="Your email address"
+                    placeholder="Email"
                     className="bg-white-100 py-2 px-3 text-tertiary rounded-lg outline-none border-none font-medium"
                   />
                 </Form.Group>
                 <Form.Group className="mb-4">
                   {" "}
-                  <Form.Label className="text-white font-medium">
-                    Your Message
-                  </Form.Label>
                   <Form.Control
                     as="textarea"
                     rows={7}
                     name="message"
                     value={form.message}
                     onChange={handleChange}
-                    placeholder="What you want to say?"
+                    placeholder="Message"
                     className="bg-white-100 py-2 px-3 text-tertiary rounded-lg outline-none border-none font-medium"
                   />
                 </Form.Group>
