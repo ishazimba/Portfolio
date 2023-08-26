@@ -12,8 +12,6 @@ import { styles } from "../src/styles";
 import { slideIn } from "../src/utils/motion";
 import ContactLinks from "./contactLinks";
 
-import config from "../config";
-
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -21,9 +19,9 @@ const Contact = () => {
     email: "",
     message: "",
   });
-  const emailServiceId = config.emailServiceId;
-  const emailTemplateId = config.emailTemplateId;
-  const emailUserId = config.emailUserId;
+  const emailServiceId = import.meta.env.VITE_REACT_APP_EMAIL_SERVICE_ID;
+  const emailTemplateId = import.meta.env.VITE_REACT_APP_EMAIL_TEMPLATE_ID;
+  const emailUserId = import.meta.env.VITE_REACT_APP_EMAIL_USER_ID;
 
   const [loading, setLoading] = useState(false);
 
