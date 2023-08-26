@@ -155,7 +155,7 @@ const Contact = () => {
                   disabled={loading}
                   style={{ width: "100%", maxWidth: "120px", height: "45px" }}
                 >
-                  {loading ? "Sending..." : "Send"}
+                  {loading ? "Sending..." : "Let's talk"}
                 </Button>
               </Form>
               <br />
