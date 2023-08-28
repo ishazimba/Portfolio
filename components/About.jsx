@@ -6,6 +6,7 @@ import { styles } from "../src/styles";
 import { services } from "../src/constants";
 import { fadeIn, textVariant } from "../src/utils/motion";
 import { SectionWrapper } from "../src/hoc";
+import ShootingStarsCanvas from "./canvas/ShootingStars";
 
 const ServiceCard = ({ index, title, icon }) => (
   <div className="col-xs-6 col-md-4 col-lg-3">
@@ -60,7 +61,7 @@ const About = () => {
         <p className={styles.sectionSubText}>Get to know me</p>
         <h2 className={styles.sectionHeadText}>About Me</h2>
       </motion.div>
-
+      <ShootingStarsCanvas />
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-17 max-w-3xl lead-lg"

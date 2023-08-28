@@ -5,7 +5,7 @@ import StarsCanvas from "./canvas/Stars";
 
 import emailjs from "emailjs-com";
 
-import { Form, Button } from "react-bootstrap"; // Import Bootstrap components
+import { Form, Button } from "react-bootstrap";
 import { SectionWrapper } from "../src/hoc";
 import { styles } from "../src/styles";
 

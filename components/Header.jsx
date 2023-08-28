@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
 import styled from "styled-components";
-
 import backgroundImage from "../src/assets/herobg.jpg";
 
 const DesktopImageContainer = styled.div`
@@ -39,77 +38,79 @@ const Container = styled.div`
 
 const Header = () => {
   return (
-    <header
-      className="header_section custom-background"
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        padding: "3rem 0",
-      }}
-    >
-      <Container className="container">
-        <div className="row align-items-center">
-          <div className="col-md-6">
-            <div className="hero-text pt-md-5">
-              <h1
-                className="text-white mb-3"
-                style={{
-                  paddingBottom: "1rem",
-                  "@media (minWidth: 992px)": "0.3rem",
-                  fontWeight: "bold",
-                }}
-              >
-                Hi, I'm <span style={{ color: "#07E2F4" }}>Isha</span>
-              </h1>
-              <h3
-                className="text-white mb-3"
-                style={{
-                  paddingBottom: "2.5rem",
-
-                  "@media (minWidth: 992px)": "0.5rem",
-                }}
-              >
-                I develop user interfaces <br className="d-sm-block" /> and web
-                applications
-              </h3>
-              <div
-                className="text-center pt-4 pb-2"
-                style={{
-                  paddingRight: "20rem",
-
-                  marginBottom: window.innerWidth >= 992 ? "10rem" : "1rem",
-                }}
-              >
-                <StyledButton
-                  to="projects"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={100}
+    <>
+      <header
+        className="header_section custom-background"
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          padding: "3rem 0",
+        }}
+      >
+        <Container className="container">
+          <div className="row align-items-center">
+            <div className="col-md-6">
+              <div className="hero-text pt-md-5">
+                <h1
+                  className="text-white mb-3"
+                  style={{
+                    paddingBottom: "1rem",
+                    "@media (minWidth: 992px)": "0.3rem",
+                    fontWeight: "bold",
+                  }}
                 >
-                  Projects
-                </StyledButton>
+                  Hi, I'm <span style={{ color: "#07E2F4" }}>Isha</span>
+                </h1>
+                <h3
+                  className="text-white mb-3"
+                  style={{
+                    paddingBottom: "2.5rem",
+
+                    "@media (minWidth: 992px)": "0.5rem",
+                  }}
+                >
+                  I develop user interfaces <br className="d-sm-block" /> and
+                  web applications
+                </h3>
+                <div
+                  className="text-center pt-4 pb-2"
+                  style={{
+                    paddingRight: "20rem",
+
+                    marginBottom: window.innerWidth >= 992 ? "10rem" : "1rem",
+                  }}
+                >
+                  <StyledButton
+                    to="projects"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={100}
+                  >
+                    Projects
+                  </StyledButton>
+                </div>
               </div>
             </div>
-          </div>
-          <DesktopImageContainer className="col-md-3">
-            <div className="text-center">
-              <img
-                src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/computer.png"
-                alt="Project Image"
-                className="img-fluid"
-                style={{
-                  maxWidth: "100%",
+            <DesktopImageContainer className="col-md-3">
+              <div className="text-center">
+                <img
+                  src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/computer.png"
+                  alt="Project Image"
+                  className="img-fluid"
+                  style={{
+                    maxWidth: "100%",
 
-                  "@media (minWidth: 992px)": "50%",
-                }}
-              />
-            </div>
-          </DesktopImageContainer>
-        </div>
-      </Container>
-    </header>
+                    "@media (minWidth: 992px)": "50%",
+                  }}
+                />
+              </div>
+            </DesktopImageContainer>
+          </div>
+        </Container>
+      </header>
+    </>
   );
 };
 

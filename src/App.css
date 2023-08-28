@@ -30,9 +30,6 @@ body {
   }
 }
 
-.custom-background {
-  background-image: url("../src/assets/herobg.jpg");
-}
 .header_section {
   background-position: center;
 }
