@@ -109,6 +109,12 @@ const NcNewsContent = () => {
                 NC News
               </a>
             </p>
+            <p>
+              <a href="https://ncnewsarticle.netlify.app/" target="_blank">
+                {" "}
+                Link to Live version
+              </a>
+            </p>
 
             <p>
               This project showcases my ability to work with React, consume
@@ -118,8 +124,6 @@ const NcNewsContent = () => {
               high-quality code and my understanding of user-centric development
               principles.
             </p>
-
-            <p>This project is not hosted yet and it work in progress.</p>
           </div>
         </div>
       </div>
