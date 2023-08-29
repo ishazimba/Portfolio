@@ -19,15 +19,38 @@ const Contact = () => {
     email: "",
     message: "",
   });
+  const [validations, setValidations] = useState({
+    name: true,
+    email: true,
+    message: true,
+  });
   const emailServiceId = import.meta.env.VITE_REACT_APP_EMAIL_SERVICE_ID;
   const emailTemplateId = import.meta.env.VITE_REACT_APP_EMAIL_TEMPLATE_ID;
   const emailUserId = import.meta.env.VITE_REACT_APP_EMAIL_USER_ID;
 
   const [loading, setLoading] = useState(false);
+  const [errors, setErrors] = useState({
+    name: false,
+    email: false,
+    message: false,
+  });
 
   const handleChange = (e) => {
     const { target } = e;
     const { name, value } = target;
+
+    // Validate fields
+    if (name === "name" || name === "message") {
+      setValidations({
+        ...validations,
+        [name]: value.trim() !== "", // Check if the field is not empty
+      });
+    } else if (name === "email") {
+      setValidations({
+        ...validations,
+        email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value), // Check email format
+      });
+    }
 
     setForm({
       ...form,
@@ -37,6 +60,18 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const emptyFields = [];
+    if (!form.name.trim()) emptyFields.push("name");
+    if (!form.email.trim()) emptyFields.push("email");
+    if (!form.message.trim()) emptyFields.push("message");
+
+    if (emptyFields.length > 0) {
+      const newErrors = { ...errors };
+      emptyFields.forEach((field) => (newErrors[field] = true));
+      setErrors(newErrors);
+      return;
+    }
+
     setLoading(true);
 
     emailjs
@@ -62,6 +97,11 @@ const Contact = () => {
             name: "",
             email: "",
             message: "",
+          });
+          setValidations({
+            name: true,
+            email: true,
+            message: true,
           });
         },
         (error) => {
@@ -100,7 +140,7 @@ const Contact = () => {
                 <p className={`${styles.sectionSubText} text-secondary`}></p>
 
                 <p
-                  className=" text-uppercase font-weight-bold"
+                  className="text-uppercase font-weight-bold"
                   style={{ color: "#c3c0d5" }}
                 >
                   Get in touch
@@ -114,38 +154,58 @@ const Contact = () => {
                   className="mt-4 flex flex-col gap-5"
                 >
                   <Form.Group className="mb-4">
-                    {" "}
                     <Form.Control
                       type="text"
                       name="name"
                       value={form.name}
-                      onChange={handleChange}
+                      onChange={(e) =>
+                        setForm({ ...form, name: e.target.value })
+                      }
                       placeholder="Name"
-                      className="bg-white-100 py-2 px-3 text-tertiary rounded-lg outline-none border-none font-medium col-md-12"
+                      className={`bg-white-100 py-2 px-3 text-tertiary rounded-lg outline-none border-none font-medium col-md-12 ${
+                        errors.name ? "border-red-500" : ""
+                      }`}
                     />
+                    {errors.name && (
+                      <p className="text-red-500">Please enter your name.</p>
+                    )}
                   </Form.Group>
                   <Form.Group className="mb-4">
-                    {" "}
                     <Form.Control
                       type="email"
                       name="email"
                       value={form.email}
-                      onChange={handleChange}
+                      onChange={(e) =>
+                        setForm({ ...form, email: e.target.value })
+                      }
                       placeholder="Email"
-                      className="bg-white-100 py-2 px-3 text-tertiary rounded-lg outline-none border-none font-medium mb-4"
+                      className={`bg-white-100 py-2 px-3 text-tertiary rounded-lg outline-none border-none font-medium mb-4 ${
+                        errors.email ? "border-red-500" : ""
+                      }`}
                     />
+                    {errors.email && (
+                      <p className="text-red-500">
+                        Please enter a valid email.
+                      </p>
+                    )}
                   </Form.Group>
                   <Form.Group className="mb-4">
-                    {" "}
                     <Form.Control
                       as="textarea"
                       rows={7}
                       name="message"
                       value={form.message}
-                      onChange={handleChange}
+                      onChange={(e) =>
+                        setForm({ ...form, message: e.target.value })
+                      }
                       placeholder="Message"
-                      className="bg-white-100 py-2 px-3 text-tertiary rounded-lg outline-none border-none font-medium mb-4"
+                      className={`bg-white-100 py-2 px-3 text-tertiary rounded-lg outline-none border-none font-medium mb-4 ${
+                        errors.message ? "border-red-500" : ""
+                      }`}
                     />
+                    {errors.message && (
+                      <p className="text-red-500">Please enter your message.</p>
+                    )}
                   </Form.Group>
 
                   <Button
@@ -175,7 +235,7 @@ const Contact = () => {
         </div>
         <div className="footer mt-8 sm:mt-16 md:mt-20 lg:mt-24">
           <p
-            className=" text-uppercase font-weight-bold text-center"
+            className="text-uppercase font-weight-bold text-center"
             style={{ color: "#c3c0d5", marginTop: "60px" }}
           >
             Thank you for visiting my portfolio 🙏
@@ -184,7 +244,7 @@ const Contact = () => {
           <br />
 
           <p
-            className=" text-uppercase font-weight-bold text-center"
+            className="text-uppercase font-weight-bold text-center"
             style={{ color: "#c3c0d5" }}
           >
             &copy; 2023 Isha Tamang
