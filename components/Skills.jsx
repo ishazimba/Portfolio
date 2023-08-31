@@ -4,6 +4,8 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Tech from "./Tech";
+import { styles } from "../src/styles";
+import { color } from "framer-motion";
 
 const Skills = () => {
   const CustomPrevArrow = ({ onClick }) => (
@@ -18,6 +20,9 @@ const Skills = () => {
     </div>
   );
 
+  const textColor = {
+    color: "Black",
+  };
   const settings = {
     dots: true,
     infinite: true,

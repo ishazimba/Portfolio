@@ -46,16 +46,7 @@ const Navbar = () => {
                 Home
               </Link>
             </li>
-            <li className="nav-item">
-              <Link
-                to="/?section=skills"
-                className="nav-link"
-                onClick={handleLinkClick}
-                style={{ fontSize: "20px" }}
-              >
-                Skills
-              </Link>
-            </li>
+
             <li className="nav-item">
               <Link
                 to="/?section=about"
@@ -64,6 +55,16 @@ const Navbar = () => {
                 style={{ fontSize: "20px" }}
               >
                 About
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/?section=skills"
+                className="nav-link"
+                onClick={handleLinkClick}
+                style={{ fontSize: "20px" }}
+              >
+                Skills
               </Link>
             </li>
             <li className="nav-item">
