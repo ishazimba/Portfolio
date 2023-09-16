@@ -95,11 +95,13 @@ const Navbar = () => {
           .navbar-nav .nav-link {
             margin-left: 20px;
             color: #fff;
+           
           }
 
           .navbar-nav .nav-link:hover {
             color: #87ceeb;
             cursor: pointer;
+           
           }
           
      
