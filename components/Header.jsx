@@ -96,7 +96,7 @@ const Header = () => {
             <DesktopImageContainer className="col-md-5">
               <div className="text-center">
                 <img
-                  src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/computer.png"
+                  src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/desktop.png"
                   alt="Project Image"
                   className="img-fluid"
                   style={{
