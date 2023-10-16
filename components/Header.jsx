@@ -45,7 +45,7 @@ const Header = () => {
           backgroundImage: `url(${backgroundImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          padding: "3rem 0",
+          padding: "4rem 0",
         }}
       >
         <Container className="container">
@@ -93,7 +93,7 @@ const Header = () => {
                 </div>
               </div>
             </div>
-            <DesktopImageContainer className="col-md-3">
+            <DesktopImageContainer className="col-md-5">
               <div className="text-center">
                 <img
                   src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/computer.png"
