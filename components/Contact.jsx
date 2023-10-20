@@ -167,7 +167,7 @@ const Contact = () => {
                       }`}
                     />
                     {errors.name && (
-                      <p className="text-red-500">Please enter your name.</p>
+                      <p style={{ color: "red" }}>Please enter your name *</p>
                     )}
                   </Form.Group>
                   <Form.Group className="mb-4">
@@ -184,9 +184,7 @@ const Contact = () => {
                       }`}
                     />
                     {errors.email && (
-                      <p className="text-red-500">
-                        Please enter a valid email.
-                      </p>
+                      <p style={{ color: "red" }}>Please enter your email *</p>
                     )}
                   </Form.Group>
                   <Form.Group className="mb-4">
@@ -204,7 +202,9 @@ const Contact = () => {
                       }`}
                     />
                     {errors.message && (
-                      <p className="text-red-500">Please enter your message.</p>
+                      <p style={{ color: "red" }}>
+                        Please enter your message *
+                      </p>
                     )}
                   </Form.Group>
 
