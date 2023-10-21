@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import styled from "styled-components";
 import backgroundImage from "../src/assets/herobg.jpg";
@@ -37,10 +37,20 @@ const Container = styled.div`
 `;
 
 const Header = () => {
+  const [bgLoaded, setBgLoaded] = useState(false);
+  useEffect(() => {
+    const bgImage = new Image();
+    bgImage.src = backgroundImage;
+    bgImage.onload = () => {
+      setBgLoaded(true);
+    };
+  }, []);
   return (
     <>
       <header
-        className="header_section custom-background"
+        className={`header_section custom-background ${
+          bgLoaded ? "loaded" : ""
+        }`}
         style={{
           backgroundImage: `url(${backgroundImage})`,
           backgroundSize: "cover",
@@ -104,6 +114,7 @@ const Header = () => {
 
                     "@media (minWidth: 992px)": "50%",
                   }}
+                  loading="lazy"
                 />
               </div>
             </DesktopImageContainer>
