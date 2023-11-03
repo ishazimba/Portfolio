@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import styled from "styled-components";
-import backgroundImage from "../src/assets/herobg.jpg";
 
 const DesktopImageContainer = styled.div`
   @media (minwidth: 992px) {
@@ -37,90 +36,70 @@ const Container = styled.div`
 `;
 
 const Header = () => {
-  const [bgLoaded, setBgLoaded] = useState(false);
-  useEffect(() => {
-    const bgImage = new Image();
-    bgImage.src = backgroundImage;
-    bgImage.onload = () => {
-      setBgLoaded(true);
-    };
-  }, []);
   return (
     <>
-      <header
-        className={`header_section custom-background ${
-          bgLoaded ? "loaded" : ""
-        }`}
-        style={{
-          backgroundImage: `url(${backgroundImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          padding: "4rem 0",
-        }}
-      >
-        <Container className="container">
-          <div className="row align-items-center">
-            <div className="col-md-6">
-              <div className="hero-text pt-md-5">
-                <h1
-                  className="text-white mb-3"
-                  style={{
-                    paddingBottom: "1rem",
-                    "@media (minWidth: 992px)": "0.3rem",
-                    fontWeight: "bold",
-                  }}
-                >
-                  Hi, I'm <span style={{ color: "#07E2F4" }}>Isha</span>
-                </h1>
-                <h3
-                  className="text-white mb-3"
-                  style={{
-                    paddingBottom: "2.5rem",
+      <Container className="container">
+        <div className="row align-items-center">
+          <div className="col-md-6">
+            <div className="hero-text pt-md-5">
+              <h1
+                className="text-white mb-3"
+                style={{
+                  paddingBottom: "1rem",
+                  "@media (minWidth: 992px)": "0.3rem",
+                  fontWeight: "bold",
+                }}
+              >
+                Hi, I'm <span style={{ color: "#07E2F4" }}>Isha</span>
+              </h1>
+              <h3
+                className="text-white mb-3"
+                style={{
+                  paddingBottom: "2.5rem",
 
-                    "@media (minWidth: 992px)": "0.5rem",
-                  }}
-                >
-                  I develop user interfaces <br className="d-sm-block" /> and
-                  web applications
-                </h3>
-                <div
-                  className="text-center pt-4 pb-2"
-                  style={{
-                    paddingRight: "20rem",
+                  "@media (minWidth: 992px)": "0.5rem",
+                }}
+              >
+                I develop user interfaces <br className="d-sm-block" /> and web
+                applications
+              </h3>
+              <div
+                className="text-center pt-4 pb-2"
+                style={{
+                  paddingRight: "20rem",
 
-                    marginBottom: window.innerWidth >= 992 ? "10rem" : "1rem",
-                  }}
+                  marginBottom: window.innerWidth >= 992 ? "10rem" : "1rem",
+                }}
+              >
+                <StyledButton
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={100}
                 >
-                  <StyledButton
-                    to="contact"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={100}
-                  >
-                    Get in Touch
-                  </StyledButton>
-                </div>
+                  Get in Touch
+                </StyledButton>
               </div>
             </div>
-            <DesktopImageContainer className="col-md-5">
-              <div className="text-center">
-                <img
-                  src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/desktop.png"
-                  alt="Project Image"
-                  className="img-fluid"
-                  style={{
-                    maxWidth: "100%",
-
-                    "@media (minWidth: 992px)": "50%",
-                  }}
-                  loading="lazy"
-                />
-              </div>
-            </DesktopImageContainer>
           </div>
-        </Container>
-      </header>
+          <DesktopImageContainer className="col-md-5">
+            <div className="text-center">
+              <img
+                src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/desktop.png"
+                alt="Project Image"
+                className="img-fluid"
+                style={{
+                  maxWidth: "100%",
+
+                  "@media (minWidth: 992px)": "50%",
+                }}
+                loading="lazy"
+              />
+            </div>
+          </DesktopImageContainer>
+        </div>
+      </Container>
     </>
   );
 };

@@ -83,7 +83,7 @@ const Contact = () => {
           from_name: form.name,
           to_name: "Isha Tamang",
           from_email: form.email,
-          to_email: "isha.zimba@gmail.com",
+          to_email: "ishazimba.tamang@gmail.com",
           message: form.message,
         },
         emailUserId
@@ -102,6 +102,11 @@ const Contact = () => {
             name: true,
             email: true,
             message: true,
+          });
+          setErrors({
+            name: false,
+            email: false,
+            message: false,
           });
         },
         (error) => {
