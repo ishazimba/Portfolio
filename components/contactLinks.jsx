@@ -38,7 +38,7 @@ const ContactLinks = ({ size }) => {
         </div>
       </a>
       <a
-        href="mailto:isha.zimba@gmail.com?subject=Through portfolio"
+        href="mailto:ishazimba.tamang@gmail.com?subject=Through portfolio"
         className="contact-link"
       >
         <div

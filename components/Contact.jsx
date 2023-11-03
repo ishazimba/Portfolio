@@ -124,137 +124,130 @@ const Contact = () => {
 
   return (
     <>
-      <div className="contact-container">
-        <StarsCanvas />
-
-        <div className="contact-content">
-          <div className="xl:mt-12 d-flex justify-content-center align-items-center gap-10 overflow-hidden">
-            <div
-              className="w-100 mx-auto"
-              style={{ maxWidth: "500px", paddingTop: "50px" }}
+      <div>
+        <div className="xl:mt-12 d-flex justify-content-center align-items-center gap-10 overflow-hidden">
+          <StarsCanvas />
+          <div
+            className="w-100 mx-auto"
+            style={{ maxWidth: "500px", paddingTop: "50px" }}
+          >
+            <motion.div
+              variants={slideIn("left", "tween", 0.2, 1)}
+              className="flex-1 p-4 border-none mx-auto"
+              style={{
+                backgroundColor: "var(--tertiary-color)",
+                padding: "40px",
+                borderRadius: "20px",
+              }}
             >
-              <motion.div
-                variants={slideIn("left", "tween", 0.2, 1)}
-                className="flex-1 p-4 border-none mx-auto"
-                style={{
-                  backgroundColor: "var(--tertiary-color)",
-                  padding: "40px",
-                  borderRadius: "20px",
-                }}
+              <p className={`${styles.sectionSubText} text-secondary`}></p>
+
+              <p
+                className="text-uppercase font-weight-bold"
+                style={{ color: "#c3c0d5" }}
               >
-                <p className={`${styles.sectionSubText} text-secondary`}></p>
+                Get in touch
+              </p>
 
-                <p
-                  className="text-uppercase font-weight-bold"
-                  style={{ color: "#c3c0d5" }}
+              <h2 className={styles.sectionHeadText}>Contact</h2>
+
+              <Form
+                ref={formRef}
+                onSubmit={handleSubmit}
+                className="mt-4 flex flex-col gap-5"
+              >
+                <Form.Group className="mb-4">
+                  <Form.Control
+                    type="text"
+                    name="name"
+                    value={form.name}
+                    onChange={(e) => setForm({ ...form, name: e.target.value })}
+                    placeholder="Name"
+                    className={`bg-white-100 py-2 px-3 text-tertiary rounded-lg outline-none border-none font-medium col-md-12 ${
+                      errors.name ? "border-red-500" : ""
+                    }`}
+                  />
+                  {errors.name && (
+                    <p style={{ color: "red" }}>Please enter your name *</p>
+                  )}
+                </Form.Group>
+                <Form.Group className="mb-4">
+                  <Form.Control
+                    type="email"
+                    name="email"
+                    value={form.email}
+                    onChange={(e) =>
+                      setForm({ ...form, email: e.target.value })
+                    }
+                    placeholder="Email"
+                    className={`bg-white-100 py-2 px-3 text-tertiary rounded-lg outline-none border-none font-medium mb-4 ${
+                      errors.email ? "border-red-500" : ""
+                    }`}
+                  />
+                  {errors.email && (
+                    <p style={{ color: "red" }}>Please enter your email *</p>
+                  )}
+                </Form.Group>
+                <Form.Group className="mb-4">
+                  <Form.Control
+                    as="textarea"
+                    rows={7}
+                    name="message"
+                    value={form.message}
+                    onChange={(e) =>
+                      setForm({ ...form, message: e.target.value })
+                    }
+                    placeholder="Message"
+                    className={`bg-white-100 py-2 px-3 text-tertiary rounded-lg outline-none border-none font-medium mb-4 ${
+                      errors.message ? "border-red-500" : ""
+                    }`}
+                  />
+                  {errors.message && (
+                    <p style={{ color: "red" }}>Please enter your message *</p>
+                  )}
+                </Form.Group>
+
+                <Button
+                  type="submit"
+                  className={`my-custom-button ${loading ? "loading" : ""}`}
+                  disabled={loading}
+                  style={{ width: "100%", maxWidth: "120px", height: "45px" }}
                 >
-                  Get in touch
-                </p>
+                  {loading ? "Sending..." : "Let's talk"}
+                </Button>
+              </Form>
+              <br />
+              <p
+                className="text-uppercase font-weight-bold text-center"
+                style={{ color: "#c3c0d5" }}
+              >
+                I am currently open to work ✅
+              </p>
+              <br />
 
-                <h2 className={styles.sectionHeadText}>Contact</h2>
-
-                <Form
-                  ref={formRef}
-                  onSubmit={handleSubmit}
-                  className="mt-4 flex flex-col gap-5"
-                >
-                  <Form.Group className="mb-4">
-                    <Form.Control
-                      type="text"
-                      name="name"
-                      value={form.name}
-                      onChange={(e) =>
-                        setForm({ ...form, name: e.target.value })
-                      }
-                      placeholder="Name"
-                      className={`bg-white-100 py-2 px-3 text-tertiary rounded-lg outline-none border-none font-medium col-md-12 ${
-                        errors.name ? "border-red-500" : ""
-                      }`}
-                    />
-                    {errors.name && (
-                      <p style={{ color: "red" }}>Please enter your name *</p>
-                    )}
-                  </Form.Group>
-                  <Form.Group className="mb-4">
-                    <Form.Control
-                      type="email"
-                      name="email"
-                      value={form.email}
-                      onChange={(e) =>
-                        setForm({ ...form, email: e.target.value })
-                      }
-                      placeholder="Email"
-                      className={`bg-white-100 py-2 px-3 text-tertiary rounded-lg outline-none border-none font-medium mb-4 ${
-                        errors.email ? "border-red-500" : ""
-                      }`}
-                    />
-                    {errors.email && (
-                      <p style={{ color: "red" }}>Please enter your email *</p>
-                    )}
-                  </Form.Group>
-                  <Form.Group className="mb-4">
-                    <Form.Control
-                      as="textarea"
-                      rows={7}
-                      name="message"
-                      value={form.message}
-                      onChange={(e) =>
-                        setForm({ ...form, message: e.target.value })
-                      }
-                      placeholder="Message"
-                      className={`bg-white-100 py-2 px-3 text-tertiary rounded-lg outline-none border-none font-medium mb-4 ${
-                        errors.message ? "border-red-500" : ""
-                      }`}
-                    />
-                    {errors.message && (
-                      <p style={{ color: "red" }}>
-                        Please enter your message *
-                      </p>
-                    )}
-                  </Form.Group>
-
-                  <Button
-                    type="submit"
-                    className={`my-custom-button ${loading ? "loading" : ""}`}
-                    disabled={loading}
-                    style={{ width: "100%", maxWidth: "120px", height: "45px" }}
-                  >
-                    {loading ? "Sending..." : "Let's talk"}
-                  </Button>
-                </Form>
-                <br />
-                <p
-                  className="text-uppercase font-weight-bold text-center"
-                  style={{ color: "#c3c0d5" }}
-                >
-                  I am currently open to work ✅
-                </p>
-                <br />
-
-                <div className="d-flex justify-content-center">
-                  <ContactLinks size="2rem" />
-                </div>
-              </motion.div>
-            </div>
+              <div className="d-flex justify-content-center">
+                <ContactLinks size="2rem" />
+              </div>
+            </motion.div>
           </div>
         </div>
-        <div className="footer mt-8 sm:mt-16 md:mt-20 lg:mt-24">
-          <p
-            className="text-uppercase font-weight-bold text-center"
-            style={{ color: "#c3c0d5", marginTop: "60px" }}
-          >
-            Thank you for visiting my portfolio 🙏
-          </p>
+      </div>
+      <div className="footer mt-8 sm:mt-16 md:mt-20 lg:mt-24">
+        <p
+          className="text-uppercase font-weight-bold text-center"
+          style={{ color: "#c3c0d5", marginTop: "60px" }}
+        >
+          Thank you for visiting my portfolio 🙏
+        </p>
 
-          <br />
+        <br />
 
-          <p
-            className="text-uppercase font-weight-bold text-center"
-            style={{ color: "#c3c0d5" }}
-          >
-            &copy; 2023 Isha Tamang
-          </p>
-        </div>
+        <p
+          className="text-uppercase font-weight-bold text-center"
+          style={{ color: "#c3c0d5" }}
+        >
+          &copy; 2023 Isha Tamang
+        </p>
       </div>
     </>
   );

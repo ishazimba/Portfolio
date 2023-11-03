@@ -36,7 +36,7 @@ const StarsCanvas = ({ size = "100%" }) => {
         position: "absolute",
         width: size,
         height: size,
-        zIndex: -1,
+        zIndex: 0,
       }}
     >
       <Canvas camera={{ position: [0, 0, 1] }}>
