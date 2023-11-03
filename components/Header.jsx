@@ -92,13 +92,13 @@ const Header = () => {
                   }}
                 >
                   <StyledButton
-                    to="projects"
+                    to="contact"
                     spy={true}
                     smooth={true}
                     offset={-70}
                     duration={100}
                   >
-                    Projects
+                    Get in Touch
                   </StyledButton>
                 </div>
               </div>
