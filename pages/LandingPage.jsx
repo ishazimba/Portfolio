@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import About from "../components/About";
-import Projects from "../components/Projects";
+// import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import Header from "../components/Header";
 
 import Skills from "../components/Skills";
-import Tech from "../components/Tech";
+// import Tech from "../components/Tech";
 import StarsCanvas from "../components/canvas/Stars";
 
 const LandingPage = () => {
@@ -36,9 +36,9 @@ const LandingPage = () => {
           <Skills />
         </section>
 
-        <section id="projects">
+        {/* <section id="projects">
           <Projects />
-        </section>
+        </section> */}
       </main>
       <footer>
         <section id="contact">
