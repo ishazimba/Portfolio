@@ -9,7 +9,7 @@ const Container = styled.div`
   text-align: center;
 
   @media (min-width: 992px) {
-    padding-bottom: 6rem;
+    padding-bottom: 5rem;
     padding-top: 10rem;
   }
 `;
@@ -26,7 +26,7 @@ const Row = styled.div`
 const Intro = styled.div`
   flex: 1;
 
-  padding-top: 8rem;
+  padding-top: 6rem;
   text-align: left;
   padding-bottom: 10px;
   padding-left: 1rem;
@@ -84,7 +84,7 @@ const Header = () => {
         </Intro>
         <ImageContainer>
           <img
-            src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/imageisha.png"
+            src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/profilepic_isha.png"
             alt="profile pic"
             style={{
               maxWidth: "60%",

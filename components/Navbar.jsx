@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <nav
       className="navbar navbar-expand-lg navbar-dark fixed-top "
-      style={{ backgroundColor: "#000404" }}
+      style={{ backgroundColor: "#000c0e" }}
     >
       <div className="container">
         <Link to="/?section=home" className="navbar-brand">
