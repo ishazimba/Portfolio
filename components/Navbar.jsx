@@ -114,26 +114,22 @@ const Navbar = () => {
           .navbar-nav .nav-link {
             margin-left: 4rem;
             color: #fff;
+            background-color: transparent;
           
            
           }
 
           .navbar-nav .nav-link:hover {
-            color: #87ceeb;
+            color: white;
             cursor: pointer;
+            background-color: #07E2F4; 
+          
            
           }
           
      
 
-          .navbar-dark .navbar-nav .nav-link {
-            color: #fff;
-          }
-          
-          .navbar-dark .navbar-nav .nav-link:hover {
-            color: #87ceeb;
-            cursor: pointer;
-          }
+         
           
           .navbar-nav.ml-auto {
             margin-left: auto;
