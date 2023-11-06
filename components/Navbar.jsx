@@ -145,6 +145,9 @@ const Navbar = () => {
               margin-right: 20px; 
               text-align: right;
             }
+            .nav-item:last-child {
+              text-align: right;
+            }
           }
         `}
       </style>
