@@ -217,13 +217,13 @@ const Contact = () => {
                 </Button>
               </Form>
               <br />
-              <p
+              {/* <p
                 className="text-uppercase font-weight-bold text-center"
                 style={{ color: "#c3c0d5" }}
               >
                 I am currently open to work ✅
               </p>
-              <br />
+              <br /> */}
 
               <div className="d-flex justify-content-center">
                 <ContactLinks size="2rem" />

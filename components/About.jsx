@@ -69,30 +69,22 @@ const About = () => {
         JavaScript stack, including React, TypeScript, Redux, and Next.js. I
         have a track record of working effectively in remote agile teams and I
         am committed to creating cutting-edge web applications in fully remote
-        roles.
+        roles. My strength is building scalable, maintainable, and performant
+        web applications.
       </motion.p>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        After successfully graduating in Information Technology, I started my
-        developer journey at Northcoders where I honed my skills in full-stack
-        development. Motivated by my passion for building user-friendly web
-        interfaces that seamlessly integrate design and functionality, I chose
-        to specialise as a Frontend Developer. Currently, I am working as a
-        Freelance Frontend Developer, with a strong focus on Frontend
-        development.
+        Two milestones I am most proud of in my career are, having delivered
+        over 5+ enterprise-level projects at FX Pro, under extremely tight
+        deadlines and improving one client’s application performance by over 50%
+        on key pages, leading to a steep increase in conversions during my time
+        as a freelance. I am looking for an Agile organisation where I can use
+        my expertise to create exceptional user interfaces and web applications.
       </motion.p>
 
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
-      >
-        🚀 <strong>My personal motto:</strong> "Programming is not just creating
-        software; it's about creating opportunities. For ourselves and the
-        world."
-      </motion.p>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
@@ -103,10 +95,10 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        🔧 <strong>Technologies & Tools:</strong> React, React Native, Redux,
-        Node.js, Express.js, GraphQL, Cypress, PostgreSQL, JWT, RESTful APIs,
-        TDD, Webpack, MySQL, SQL, DevOps, AI Coding Tools (ChatGPT, GitHub
-        Co-Pilot)
+        🔧 <strong>Technologies & Tools:</strong> React, Redux, HTML5 & CSS,
+        Node.js, Express.js, Responsive Web Design, Webpack, E2E testing
+        (TestCafe, Cypress), Unit Testing (Jest, React Testing Library), REST
+        APIs
       </motion.p>
 
       <motion.p

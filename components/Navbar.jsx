@@ -44,7 +44,7 @@ const Navbar = () => {
                 to="/?section=home"
                 className="nav-link"
                 onClick={handleLinkClick}
-                style={{ fontSize: "25px" }}
+                style={{ fontSize: "20px" }}
               >
                 Home
               </Link>
@@ -55,7 +55,7 @@ const Navbar = () => {
                 to="/?section=about"
                 className="nav-link"
                 onClick={handleLinkClick}
-                style={{ fontSize: "25px" }}
+                style={{ fontSize: "20px" }}
               >
                 About
               </Link>
@@ -85,10 +85,26 @@ const Navbar = () => {
                 to="/?section=contact"
                 className="nav-link"
                 onClick={handleLinkClick}
-                style={{ fontSize: "25px" }}
+                style={{ fontSize: "20px" }}
               >
                 Contact
               </Link>
+            </li>
+            <li className="nav-item">
+              <a
+                class="nav-link"
+                href="https://drive.google.com/file/d/1mIdxRuk9jAzaWFYYdp1gMroZ7taVU7S5/view?usp=drive_link"
+                target="_blank"
+                style={{
+                  fontSize: "20px",
+                  border: "2px solid #07E2F4",
+
+                  width: "5rem",
+                  textAlign: "center",
+                }}
+              >
+                CV
+              </a>
             </li>
           </ul>
         </div>
