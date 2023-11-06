@@ -84,7 +84,10 @@ const About = () => {
         my time as a freelance.
       </motion.p>
 
-      <motion.p>
+      <motion.p
+        variants={fadeIn("", "", 0.1, 1)}
+        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+      >
         Motivated by my passion for building user-friendly web interfaces that
         seamlessly integrate design and functionality, I chose to specialise as
         a Frontend Developer. After successfully graduating in Information
