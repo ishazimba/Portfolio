@@ -9,8 +9,8 @@ const Container = styled.div`
   text-align: center;
 
   @media (min-width: 992px) {
-    padding-bottom: 5rem;
-    padding-top: 10rem;
+    padding-bottom: 8rem;
+    padding-top: 15rem;
   }
 `;
 
