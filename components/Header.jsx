@@ -55,10 +55,10 @@ const ImageContainer = styled.div`
 
 const Header = () => {
   return (
-    <Container className="container">
+    <Container className="container ">
       <Row>
         <Intro>
-          <div className="intro text-left p-16">
+          <motion.div className="intro text-left p-16">
             <h1
               className="text-white mb-2"
               style={{
@@ -80,7 +80,7 @@ const Header = () => {
               I develop user interfaces <br className="d-sm-block" /> and web
               applications
             </h3>
-          </div>
+          </motion.div>
         </Intro>
         <ImageContainer>
           <img

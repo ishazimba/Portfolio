@@ -1,48 +1,86 @@
+import { ncapi, ncnews, airpark, uwe, fp, smwa } from "../assets";
 import {
-  backend,
-  react,
-  uxdesign,
-  webicon,
-  javascript,
-  typescript,
-  html,
+  bootstrap,
   css,
-  reactjs,
+  express,
+  figma,
+  git,
+  github,
+  html,
+  javascript,
+  jest,
+  next,
+  node,
+  postgres,
+  react,
+  reactlogo,
   redux,
   tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  ncapi,
-  ncnews,
-  airpark,
-  uwe,
-  fp,
-  smwa,
-  jobit,
-  tripguide,
-  threejs,
+  typescript,
+  webpack,
 } from "../assets";
 
 const services = [
   {
-    title: "Frontend Developer",
-    icon: webicon,
+    title: "HTML",
+    icon: html,
   },
   {
-    title: "React Developer",
-    icon: react,
+    title: "CSS",
+    icon: css,
   },
   {
-    title: "UI/UX Designer",
-    icon: uxdesign,
+    title: "JavaScript",
+    icon: javascript,
+  },
+  {
+    title: "TypeScript",
+    icon: typescript,
+  },
+  {
+    title: "React",
+    icon: reactlogo,
+  },
+  {
+    title: "Webpack",
+    icon: webpack,
+  },
+  {
+    title: "Redux",
+    icon: redux,
+  },
+  {
+    title: "Bootstrap",
+    icon: bootstrap,
+  },
+  {
+    title: "Tailwind",
+    icon: tailwind,
+  },
+  {
+    title: "Jest",
+    icon: jest,
+  },
+
+  {
+    title: "Node.js",
+    icon: node,
+  },
+  {
+    title: "Git",
+    icon: git,
+  },
+  {
+    title: "Express",
+    icon: express,
+  },
+  {
+    title: "Figma",
+    icon: figma,
+  },
+  {
+    title: "Postgres",
+    icon: postgres,
   },
 ];
 
@@ -65,7 +103,7 @@ const technologies = [
   },
   {
     name: "React JS",
-    icon: reactjs,
+    icon: react,
   },
   {
     name: "Redux Toolkit",
@@ -77,16 +115,9 @@ const technologies = [
   },
   {
     name: "Node JS",
-    icon: nodejs,
+    icon: node,
   },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
+
   {
     name: "git",
     icon: git,
@@ -94,10 +125,6 @@ const technologies = [
   {
     name: "figma",
     icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
 ];
 

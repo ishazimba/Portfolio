@@ -8,15 +8,16 @@ import { fadeIn, textVariant } from "../src/utils/motion";
 import { SectionWrapper } from "../src/hoc";
 
 const ServiceCard = ({ index, title, icon }) => (
-  <div className="col-xs-6 col-md-4 col-lg-3">
+  <div className="col-xs-4 col-md-3 col-lg-2 my-3">
     <Tilt className="tilt">
       <motion.div
         variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-        className=" rounded p-4 service-card"
+        className=" rounded p-3 service-card"
         style={{
-          backgroundColor: "var(--tertiary-color)",
+          backgroundColor: "#eefeff",
+          border: "5px solid var(--tertiary-color)",
           flexBasis: "100%",
-          margin: "1rem",
+          margin: "0.8rem",
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
@@ -28,22 +29,22 @@ const ServiceCard = ({ index, title, icon }) => (
             scale: 1,
             speed: 200,
           }}
-          className="bg-tertiary rounded-20 py-3 px-3 d-flex justify-content-center align-items-center"
+          className="bg-tertiary  py-1 px-0.5  d-flex justify-content-center align-items-center"
           style={{ flex: "1" }}
         >
           <img
             src={icon}
             alt="web-development"
             style={{
-              width: "50%",
+              width: "80%",
               height: "auto",
             }}
-            className="mb-4"
+            className="mb-1"
           />
         </motion.div>
 
         <h3
-          className="text-white text-center mb-2"
+          className="text-(--tertiary-color) text-center mb-2"
           style={{ fontSize: "20px", fontWeight: "bold" }}
         >
           {title}
@@ -138,7 +139,7 @@ const About = () => {
         jog around the city.
       </motion.p>
 
-      <div className="mt-4 row row-cols-1 row-cols-md-2 row-cols-lg-3 gap-6 justify-content-center">
+      <div className="mt-4 row row-cols-2 row-cols-md-3 row-cols-lg-4 gap-6 justify-content-center">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

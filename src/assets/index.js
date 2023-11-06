@@ -1,76 +1,54 @@
 import logo from "./logo.png";
-import backend from "./backend.png";
-import webicon from "./webicon.png";
-import react from "./react.png";
-import uxdesign from "./uxdesign.png";
-import github from "./github.png";
-import menu from "./menu.svg";
-import close from "./close.svg";
 
-import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
-import git from "./tech/git.png";
-import html from "./tech/html.png";
-import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
-import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
-import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
-
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
 import ncapi from "./ncapi.png";
 import ncnews from "./ncnews.png";
 import airpark from "./airpark.png";
 import smwa from "./smwa.png";
 import uwe from "./uwe.png";
 import fp from "./fp.png";
-
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-import herobg from "./herobg.jpg";
+import css from "./css.png";
+import bootstrap from "./bootstrap.png";
+import html from "./html.png";
+import tailwind from "./tailwind.png";
+import javascript from "./javascript.png";
+import typescript from "./typescript.png";
+import express from "./express.png";
+import jest from "./jest.png";
+import git from "./git.png";
+import next from "./next.png";
+import node from "./node.png";
+import postgres from "./postgres.png";
+import react from "./react.png";
+import webpack from "./webpack.png";
+import figma from "./figma.png";
+import github from "./github.png";
+import reactlogo from "./reactlogo.png";
+import redux from "./redux.png";
 
 export {
   logo,
-  backend,
-  webicon,
-  react,
-  uxdesign,
-  github,
-  menu,
-  close,
-  css,
-  docker,
-  figma,
-  git,
-  html,
-  javascript,
-  mongodb,
-  nodejs,
-  reactjs,
-  redux,
-  tailwind,
-  typescript,
-  threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
   ncapi,
   ncnews,
   airpark,
   smwa,
+  reactlogo,
   uwe,
+  redux,
+  github,
   fp,
-  jobit,
-  tripguide,
-  herobg,
+  bootstrap,
+  figma,
+  css,
+  html,
+  tailwind,
+  javascript,
+  typescript,
+  express,
+  jest,
+  git,
+  next,
+  node,
+  postgres,
+  react,
+  webpack,
 };

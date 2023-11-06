@@ -17,7 +17,10 @@ const Navbar = () => {
   return (
     <nav
       className="navbar navbar-expand-lg navbar-dark fixed-top "
-      style={{ backgroundColor: "#000c0e" }}
+      style={{
+        backgroundColor: "#00191e",
+        borderBottom: "0.1px solid #007E88",
+      }}
     >
       <div className="container">
         <Link to="/?section=home" className="navbar-brand">
@@ -27,8 +30,8 @@ const Navbar = () => {
             alt=""
           />
         </Link>
-        <div className="flex text-secondary">
-          <ContactLinks size={25} />
+        <div className="flex text-secondary ">
+          <ContactLinks size={30} />
         </div>
 
         <button className="navbar-toggler" type="button" onClick={toggleMenu}>
@@ -41,7 +44,7 @@ const Navbar = () => {
                 to="/?section=home"
                 className="nav-link"
                 onClick={handleLinkClick}
-                style={{ fontSize: "20px" }}
+                style={{ fontSize: "25px" }}
               >
                 Home
               </Link>
@@ -52,7 +55,7 @@ const Navbar = () => {
                 to="/?section=about"
                 className="nav-link"
                 onClick={handleLinkClick}
-                style={{ fontSize: "20px" }}
+                style={{ fontSize: "25px" }}
               >
                 About
               </Link>
@@ -82,7 +85,7 @@ const Navbar = () => {
                 to="/?section=contact"
                 className="nav-link"
                 onClick={handleLinkClick}
-                style={{ fontSize: "20px" }}
+                style={{ fontSize: "25px" }}
               >
                 Contact
               </Link>
@@ -93,8 +96,9 @@ const Navbar = () => {
       <style>
         {`
           .navbar-nav .nav-link {
-            margin-left: 20px;
+            margin-left: 4rem;
             color: #fff;
+          
            
           }
 
@@ -123,6 +127,7 @@ const Navbar = () => {
             .navbar-nav .nav-link {
               margin-left: 0; 
               margin-right: 20px; 
+              text-align: right;
             }
           }
         `}
