@@ -81,9 +81,17 @@ const About = () => {
         over 5+ enterprise-level projects at FX Pro Design, under extremely
         tight deadlines and improving one client’s application performance by
         over 50% on key pages, leading to a steep increase in conversions during
-        my time as a freelance. I am looking for an Agile organisation where I
-        can use my expertise to create exceptional user interfaces and web
-        applications.
+        my time as a freelance.
+      </motion.p>
+
+      <motion.p>
+        Motivated by my passion for building user-friendly web interfaces that
+        seamlessly integrate design and functionality, I chose to specialise as
+        a Frontend Developer. After successfully graduating in Information
+        Technology, I started my developer journey at FX Pro Design as a
+        Frontend Developer and Designer, with a strong focus on the JavaScript
+        ecosystem. I am looking for an Agile organisation where I can use my
+        expertise to create exceptional user interfaces and web applications.
       </motion.p>
 
       <motion.p
