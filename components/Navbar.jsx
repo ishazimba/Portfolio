@@ -24,7 +24,11 @@ const Navbar = () => {
     >
       <div className="container">
         <Link to="/?section=home" className="navbar-brand">
-          <img src="./images/logo.png" width="60" alt="" />
+          <img
+            src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/logo.png"
+            width="60"
+            alt=""
+          />
         </Link>
         <div className="flex text-secondary ">
           <ContactLinks size={30} />
@@ -89,7 +93,7 @@ const Navbar = () => {
             <li className="nav-item">
               <a
                 class="nav-link"
-                href="https://drive.google.com/file/d/1mIdxRuk9jAzaWFYYdp1gMroZ7taVU7S5/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1dhcxyIBRCid4BcrwdvJVcc7F9QYu4hH5/view?usp=sharing"
                 target="_blank"
                 style={{
                   fontSize: "20px",

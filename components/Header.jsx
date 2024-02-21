@@ -84,7 +84,7 @@ const Header = () => {
         </Intro>
         <ImageContainer>
           <img
-            src="./images/profileImage/profilepic.png"
+            src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/profileImage/profilepic.png"
             alt="profile pic of isha"
             style={{
               maxWidth: "60%",
