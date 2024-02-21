@@ -84,10 +84,11 @@ const Header = () => {
         </Intro>
         <ImageContainer>
           <img
-            src="./images/profilepic.png"
-            alt="profile pic"
+            src="./images/profileImage/profilepic.png"
+            alt="profile pic of isha"
             style={{
               maxWidth: "60%",
+              color: "whitesmoke",
             }}
             loading="lazy"
           />
