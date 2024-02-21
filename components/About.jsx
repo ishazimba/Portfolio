@@ -73,7 +73,7 @@ const About = () => {
         web applications.
       </motion.p>
 
-      <motion.p
+      {/* <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
@@ -82,7 +82,7 @@ const About = () => {
         tight deadlines and improving one client’s application performance by
         over 50% on key pages, leading to a steep increase in conversions during
         my time as a freelance.
-      </motion.p>
+      </motion.p> */}
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
@@ -107,17 +107,17 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        🔧 <strong>Technologies & Tools:</strong> React, Redux, HTML5 & CSS,
-        Node.js, Express.js, Responsive Web Design, Webpack, E2E testing
+        🔧 <strong>Technologies & Tools:</strong> React, Redux, Next.js, HTML5 &
+        CSS, Tailwind, Bootstrap, Node.js, Express.js, Webpack, E2E testing
         (TestCafe, Cypress), Unit Testing (Jest, React Testing Library), REST
-        APIs
+        APIs, Figma
       </motion.p>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        ☁️ <strong>Cloud:</strong> CI/CD, Git, AWS S3, AWS EC2, AWS RDS
+        ☁️ <strong>Cloud:</strong> Git, AWS RDS, Netlify, Vercel
       </motion.p>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
