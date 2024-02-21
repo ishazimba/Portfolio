@@ -24,11 +24,7 @@ const Navbar = () => {
     >
       <div className="container">
         <Link to="/?section=home" className="navbar-brand">
-          <img
-            src="https://raw.githubusercontent.com/ishazimba/Portfolio/main/images/logo.png"
-            width="60"
-            alt=""
-          />
+          <img src="./images/logo.png" width="60" alt="" />
         </Link>
         <div className="flex text-secondary ">
           <ContactLinks size={30} />
